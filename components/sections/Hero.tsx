@@ -24,7 +24,7 @@ export default function Hero() {
             </p>
 
             <h1 className="text-6xl font-black leading-none text-white lg:text-8xl">
-              Engiring
+              Engineering
               <br />
               Precision.
             </h1>
