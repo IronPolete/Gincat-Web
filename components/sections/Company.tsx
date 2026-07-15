@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ImageSlider from "../ui/ImageSlider";
 
 export default function Company() {
   return (
@@ -31,13 +31,7 @@ export default function Company() {
 
         <div className="overflow-hidden rounded-3xl shadow-2xl">
 
-          <Image
-            src="/images/company/company.png"
-            alt="Instalaciones Gincat"
-            width={1600}
-            height={900}
-            className="w-full object-cover"
-          />
+        <ImageSlider />
 
         </div>
 
