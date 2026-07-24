@@ -1,13 +1,5 @@
 export const translations = {
-  es,
-  en,
-  fr,
-  de,
-  ca,
-  zh,
-  ja,
-};
-  es: {
+es: {
     hero: {
       subtitle: "GINCAT SYSTEM",
 
@@ -30,7 +22,6 @@ export const translations = {
       manufacturingText: "Fabricación propia",
     },
 
-    const es = {
     navbar: {
       company: "Empresa",
       services: "Servicios",
