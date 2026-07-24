@@ -1,4 +1,12 @@
 export const translations = {
+  es,
+  en,
+  fr,
+  de,
+  ca,
+  zh,
+  ja,
+};
   es: {
     hero: {
       subtitle: "GINCAT SYSTEM",
@@ -22,6 +30,7 @@ export const translations = {
       manufacturingText: "Fabricación propia",
     },
 
+    const es = {
     navbar: {
       company: "Empresa",
       services: "Servicios",
@@ -1926,20 +1935,21 @@ export const translations = {
         rights: "All Rights Reserved.",
   
         designed: "Designed & Developed by Gincat System.",
-           },
-    },
-    map: {
-      subtitle: "アクセス",
-      title: "私たちはすぐ近くにいます。",
-      description:
-        "当社の生産拠点は Sant Fruitós de Bages にあり、ここで金型設計・製造および金属プレス加工ソリューションを開発し、スペイン全土のお客様に提供しています。",
-      address: "住所",
-      schedule: "営業時間",
-      weekdays: "月曜日〜金曜日",
-      directions: "アクセス方法",
-      directionsText:
-        "Google マップでルートを確認し、ご来社の計画を立ててください。",
-      button: "Google マップを開く →",
+      },
+
+      map: {
+        subtitle: "アクセス",
+        title: "私たちはすぐ近くにいます。",
+        description:
+          "当社の生産拠点は Sant Fruitós de Bages にあり、ここで金型設計・製造および金属プレス加工ソリューションを開発し、スペイン全土のお客様に提供しています。",
+        address: "住所",
+        schedule: "営業時間",
+        weekdays: "月曜日〜金曜日",
+        directions: "アクセス方法",
+        directionsText:
+          "Google マップでルートを確認し、ご来社の計画を立ててください。",
+        button: "Google マップを開く →",
+      },
     },
 };
 console.log("TOP LEVEL:", Object.keys(translations));
