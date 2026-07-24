@@ -1942,5 +1942,5 @@ es: {
         button: "Google マップを開く →",
       },
     },
-};
-console.log("TOP LEVEL:", Object.keys(translations));
+  };
+  
