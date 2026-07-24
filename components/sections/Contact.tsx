@@ -1,41 +1,114 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+"use client";
 
-export default function Contact() {
+import { useState } from "react";
+import { Mail, MapPin, Phone } from "lucide-react";
+import { translations } from "@/lib/translations";
+
+type ContactProps = {
+  locale: keyof typeof translations;
+};
+
+export default function Contact({ locale }: ContactProps) {
+  const t = translations[locale].contact;
+
+  const [form, setForm] = useState({
+    name: "",
+    company: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+
+  const handleSubmit = async () => {
+    setLoading(true);
+
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+
+      if (response.ok) {
+        setSent(true);
+
+        setForm({
+          name: "",
+          company: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      }
+
+    } catch (error) {
+      console.error(error);
+
+    } finally {
+      setLoading(false);
+    }
+  };
+
+
   return (
     <section
-      id="contacto"
+      id="contact"
       className="bg-slate-900 py-32"
     >
+
       <div className="mx-auto max-w-7xl px-8">
+
 
         <div className="mb-20 text-center">
 
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-sky-300">
-            CONTACTO
+            {t.subtitle}
           </p>
 
+
           <h2 className="text-5xl font-black text-white">
-            ¿Hablamos de tu proyecto?
+            {t.title}
           </h2>
 
+
           <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-slate-300">
-            Nuestro equipo está preparado para ayudarte en cualquier proyecto
-            de matricería, estampación metálica o fabricación industrial.
+            {t.description}
           </p>
 
         </div>
 
+
+
         <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr]">
 
-          {/* Información */}
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-10">
 
+
             <h3 className="mb-10 text-3xl font-bold text-white">
-              Datos de contacto
+              {t.contactInfo}
             </h3>
 
+
             <div className="space-y-10">
+
 
               <div className="flex gap-5">
 
@@ -47,7 +120,7 @@ export default function Contact() {
                 <div>
 
                   <h4 className="font-semibold text-white">
-                    Dirección
+                    {t.address}
                   </h4>
 
                   <p className="mt-2 leading-7 text-slate-300">
@@ -62,6 +135,8 @@ export default function Contact() {
 
               </div>
 
+
+
               <div className="flex gap-5">
 
                 <Phone
@@ -72,7 +147,7 @@ export default function Contact() {
                 <div>
 
                   <h4 className="font-semibold text-white">
-                    Teléfono
+                    {t.phone}
                   </h4>
 
                   <p className="mt-2 text-slate-300">
@@ -82,6 +157,8 @@ export default function Contact() {
                 </div>
 
               </div>
+
+
 
               <div className="flex gap-5">
 
@@ -93,7 +170,7 @@ export default function Contact() {
                 <div>
 
                   <h4 className="font-semibold text-white">
-                    Correo electrónico
+                    {t.email}
                   </h4>
 
                   <p className="mt-2 text-slate-300">
@@ -104,61 +181,111 @@ export default function Contact() {
 
               </div>
 
+
             </div>
+
 
           </div>
 
-          {/* Formulario */}
+
+
 
           <div className="rounded-3xl bg-white p-10 shadow-2xl">
 
+
             <h3 className="mb-8 text-3xl font-bold text-slate-900">
-              Solicita presupuesto
+              {t.formTitle}
             </h3>
+
+
 
             <div className="space-y-5">
 
+
               <input
+                name="name"
+                value={form.name}
+                onChange={handleChange}
                 type="text"
-                placeholder="Nombre"
+                placeholder={t.name}
                 className="w-full rounded-xl border border-slate-300 px-5 py-4 text-slate-900"
               />
 
+
               <input
+                name="company"
+                value={form.company}
+                onChange={handleChange}
                 type="text"
-                placeholder="Empresa"
+                placeholder={t.company}
                 className="w-full rounded-xl border border-slate-300 px-5 py-4 text-slate-900"
               />
 
+
               <input
+                name="email"
+                value={form.email}
+                onChange={handleChange}
                 type="email"
-                placeholder="Correo electrónico"
+                placeholder={t.email}
                 className="w-full rounded-xl border border-slate-300 px-5 py-4 text-slate-900"
               />
 
+
               <input
+                name="phone"
+                value={form.phone}
+                onChange={handleChange}
                 type="tel"
-                placeholder="Teléfono"
+                placeholder={t.phone}
                 className="w-full rounded-xl border border-slate-300 px-5 py-4 text-slate-900"
               />
+
 
               <textarea
+                name="message"
+                value={form.message}
+                onChange={handleChange}
                 rows={6}
-                placeholder="Cuéntanos tu proyecto..."
+                placeholder={t.message}
                 className="w-full rounded-xl border border-slate-300 px-5 py-4 text-slate-900"
               />
 
-              <button className="w-full rounded-xl bg-slate-900 py-4 text-lg font-semibold text-white transition hover:bg-slate-800">
-                Solicitar presupuesto
+
+
+              <button
+                onClick={handleSubmit}
+                disabled={loading}
+                className="w-full rounded-xl bg-slate-900 py-4 text-lg font-semibold text-white transition hover:bg-slate-800 disabled:opacity-50"
+              >
+
+                {loading
+                  ? "Enviando..."
+                  : t.button}
+
               </button>
+
+
+
+              {sent && (
+                <p className="text-center font-semibold text-emerald-600">
+                  Solicitud enviada correctamente.
+                </p>
+              )}
+
 
             </div>
 
+
           </div>
+
 
         </div>
 
+
       </div>
+
+
     </section>
   );
 }

@@ -2,11 +2,29 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown, Globe } from "lucide-react";
+import { translations } from "@/lib/translations";
 
-export default function Navbar() {
+type NavbarProps = {
+  locale: keyof typeof translations;
+};
+
+export default function Navbar({ locale }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [languageOpen, setLanguageOpen] = useState(false);
+
+  const t = translations[locale].navbar;
+
+  const languages = [
+    { code: "es", name: "Español", flag: "🇪🇸" },
+    { code: "en", name: "English", flag: "🇬🇧" },
+    { code: "fr", name: "Français", flag: "🇫🇷" },
+    { code: "de", name: "Deutsch", flag: "🇩🇪" },
+    { code: "ca", name: "Català", flag: "CA" },
+    { code: "zh", name: "中文", flag: "🇨🇳" },
+    { code: "ja", name: "日本語", flag: "🇯🇵" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,12 +40,22 @@ export default function Navbar() {
     document.body.style.overflow = mobileMenuOpen ? "hidden" : "auto";
   }, [mobileMenuOpen]);
 
+  useEffect(() => {
+    const close = () => setLanguageOpen(false);
+
+    if (languageOpen) {
+      document.addEventListener("click", close);
+    }
+
+    return () => document.removeEventListener("click", close);
+  }, [languageOpen]);
+
   const links = [
-    { title: "Empresa", href: "#empresa" },
-    { title: "Servicios", href: "#servicios" },
-    { title: "Calidad", href: "#calidad" },
-    { title: "Maquinaria", href: "#maquinaria" },
-    { title: "Contacto", href: "#contacto" },
+    { title: t.company, href: "#empresa" },
+    { title: t.services, href: "#servicios" },
+    { title: t.quality, href: "#calidad" },
+    { title: t.machinery, href: "#maquinaria" },
+    { title: t.contact, href: "#contact" },
   ];
 
   return (
@@ -58,7 +86,7 @@ export default function Navbar() {
             />
           </a>
 
-          {/* DESKTOP */}
+          {/* MENÚ DESKTOP */}
 
           <nav className="hidden items-center gap-10 lg:flex">
             {links.map((link) => (
@@ -87,18 +115,66 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* BOTÓN DESKTOP */}
+          <div className="hidden items-center gap-4 lg:flex">
 
-          <a
-            href="#contacto"
-            className={`hidden rounded-xl px-7 py-3.5 font-semibold transition-all duration-300 lg:block ${
-              scrolled
-                ? "bg-slate-900 text-white hover:bg-slate-800"
-                : "border border-white/40 bg-white/10 text-white backdrop-blur-md hover:bg-white hover:text-slate-900"
-            }`}
-          >
-            Solicitar presupuesto
-          </a>
+            <div
+              className="relative"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setLanguageOpen(!languageOpen)}
+                className={`flex items-center gap-2 rounded-xl px-4 py-3 font-semibold transition-all ${
+                  scrolled
+                    ? "text-slate-800 hover:bg-slate-100"
+                    : "text-white hover:bg-white/10"
+                }`}
+              >
+                <Globe size={18} />
+                {locale.toUpperCase()}
+                <ChevronDown
+                  size={16}
+                  className={`transition-transform ${
+                    languageOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+
+              {languageOpen && (
+                <div className="absolute right-0 mt-3 w-56 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl">
+                  {languages.map((lang) => (
+                    <a
+                      key={lang.code}
+                      href={`/${lang.code}`}
+                      className="flex items-center gap-3 px-5 py-3 text-slate-700 transition hover:bg-slate-100"
+                    >
+                      <span className="text-lg">{lang.flag}</span>
+
+                      <span className="font-medium">
+                        {lang.name}
+                      </span>
+
+                      {lang.code === locale && (
+                        <span className="ml-auto text-xs font-bold text-slate-500">
+                          ✓
+                        </span>
+                      )}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+            <a
+  href="#contact"
+  className={`rounded-xl px-7 py-3.5 font-semibold transition-all duration-300 ${
+                scrolled
+                  ? "bg-slate-900 text-white hover:bg-slate-800"
+                  : "border border-white/40 bg-white/10 text-white backdrop-blur-md hover:bg-white hover:text-slate-900"
+              }`}
+            >
+              {t.quote}
+            </a>
+
+          </div>
 
           {/* HAMBURGUESA */}
 
@@ -135,12 +211,38 @@ export default function Navbar() {
             </a>
           ))}
 
+          {/* Idiomas móvil */}
+
+          <div className="mt-8">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-500">
+              Language
+            </p>
+
+            <div className="grid grid-cols-2 gap-3">
+              {languages.map((lang) => (
+                <a
+                  key={lang.code}
+                  href={`/${lang.code}`}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`flex items-center justify-center gap-2 rounded-xl border px-4 py-3 font-medium transition ${
+                    locale === lang.code
+                      ? "border-slate-900 bg-slate-900 text-white"
+                      : "border-slate-300 bg-white text-slate-800 hover:bg-slate-100"
+                  }`}
+                >
+                  <span>{lang.flag}</span>
+                  <span>{lang.code.toUpperCase()}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+
           <a
-            href="#contacto"
-            onClick={() => setMobileMenuOpen(false)}
+  href="#contact"
+  onClick={() => setMobileMenuOpen(false)}
             className="mt-10 rounded-xl bg-slate-900 py-5 text-center text-lg font-bold text-white"
           >
-            Solicitar presupuesto
+            {t.quote}
           </a>
 
         </div>

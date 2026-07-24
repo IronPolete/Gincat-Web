@@ -5,8 +5,15 @@ import {
   Phone,
   ArrowUpRight,
 } from "lucide-react";
+import { translations } from "@/lib/translations";
 
-export default function Footer() {
+type FooterProps = {
+  locale: keyof typeof translations;
+};
+
+export default function Footer({ locale }: FooterProps) {
+  const t = translations[locale].footer;
+
   return (
     <footer className="bg-[#0b1120] text-white">
 
@@ -27,9 +34,7 @@ export default function Footer() {
             />
 
             <p className="mt-8 leading-8 text-slate-400">
-              Especialistas en matricería,
-              estampación metálica y fabricación
-              industrial de alta precisión.
+              {t.description}
             </p>
 
           </div>
@@ -39,44 +44,44 @@ export default function Footer() {
           <div>
 
             <h3 className="mb-6 text-xl font-bold text-white">
-              Empresa
+              {t.company}
             </h3>
 
             <ul className="space-y-4">
 
               <li>
                 <a
-                  href="#empresa"
+                  href="#company"
                   className="text-slate-400 transition hover:text-white"
                 >
-                  Empresa
+                  {t.company}
                 </a>
               </li>
 
               <li>
                 <a
-                  href="#servicios"
+                  href="#services"
                   className="text-slate-400 transition hover:text-white"
                 >
-                  Servicios
+                  {t.services}
                 </a>
               </li>
 
               <li>
                 <a
-                  href="#calidad"
+                  href="#quality"
                   className="text-slate-400 transition hover:text-white"
                 >
-                  Calidad
+                  {t.quality}
                 </a>
               </li>
 
               <li>
                 <a
-                  href="#contacto"
+                  href="#contact"
                   className="text-slate-400 transition hover:text-white"
                 >
-                  Contacto
+                  {t.contact}
                 </a>
               </li>
 
@@ -89,7 +94,7 @@ export default function Footer() {
           <div>
 
             <h3 className="mb-6 text-xl font-bold text-white">
-              Contacto
+              {t.contact}
             </h3>
 
             <div className="space-y-6">
@@ -150,7 +155,7 @@ export default function Footer() {
           <div>
 
             <h3 className="mb-6 text-xl font-bold text-white">
-              Certificaciones
+              {t.certifications}
             </h3>
 
             <div className="space-y-4">
@@ -192,7 +197,7 @@ export default function Footer() {
                 <span>IATF 16949</span>
 
                 <span className="rounded-full bg-amber-500/20 px-3 py-1 text-xs font-semibold text-amber-300">
-                  Próximamente
+                  {t.comingSoon}
                 </span>
 
               </div>
@@ -208,11 +213,11 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-between gap-4 text-sm text-slate-500 lg:flex-row">
 
           <p>
-            © 2026 Gincat System. Todos los derechos reservados.
+            © 2026 Gincat System. {t.rights}
           </p>
 
           <p>
-            Diseñado y desarrollado por Gincat System.
+            {t.designed}
           </p>
 
         </div>

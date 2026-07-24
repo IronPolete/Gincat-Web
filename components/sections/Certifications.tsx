@@ -1,30 +1,39 @@
 import Image from "next/image";
+import { translations } from "@/lib/translations";
 
-const certifications = [
-  {
-    image: "/images/certifications/iso9001.png",
-    title: "ISO 9001",
-    status: "Certificación vigente",
-    statusColor: "bg-emerald-100 text-emerald-700",
-  },
-  {
-    image: "/images/certifications/iso14001.png",
-    title: "ISO 14001",
-    status: "Certificación vigente",
-    statusColor: "bg-emerald-100 text-emerald-700",
-  },
-  {
-    image: "/images/certifications/iatf16949.png",
-    title: "IATF 16949",
-    status: "Próximamente",
-    statusColor: "bg-amber-100 text-amber-700",
-  },
-];
+type CertificationsProps = {
+  locale: keyof typeof translations;
+};
 
-export default function Certifications() {
+export default function Certifications({
+  locale,
+}: CertificationsProps) {
+  const t = translations[locale].certifications;
+
+  const certifications = [
+    {
+      image: "/images/certifications/iso9001.png",
+      title: "ISO 9001",
+      status: t.active,
+      statusColor: "bg-emerald-100 text-emerald-700",
+    },
+    {
+      image: "/images/certifications/iso14001.png",
+      title: "ISO 14001",
+      status: t.active,
+      statusColor: "bg-emerald-100 text-emerald-700",
+    },
+    {
+      image: "/images/certifications/iatf16949.png",
+      title: "IATF 16949",
+      status: t.comingSoon,
+      statusColor: "bg-amber-100 text-amber-700",
+    },
+  ];
+
   return (
     <section
-      id="certificaciones"
+      id="certifications"
       className="bg-white py-32"
     >
       <div className="mx-auto max-w-7xl px-8">
@@ -32,21 +41,17 @@ export default function Certifications() {
         <div className="mx-auto mb-20 max-w-4xl text-center">
 
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">
-            CERTIFICACIONES
+            {t.subtitle}
           </p>
 
           <h2 className="text-5xl font-black text-slate-900">
-            Compromiso con la calidad
+            {t.title1}
             <br />
-            y la mejora continua.
+            {t.title2}
           </h2>
 
           <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-slate-600">
-            Trabajamos bajo sistemas de gestión certificados que garantizan
-            la calidad de nuestros procesos, el respeto por el medio ambiente
-            y la mejora continua. Actualmente nos encontramos en proceso de
-            implantación de la certificación IATF 16949 para reforzar nuestro
-            compromiso con el sector de la automoción.
+            {t.description}
           </p>
 
         </div>

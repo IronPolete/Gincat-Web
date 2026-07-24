@@ -1,50 +1,51 @@
 import { BadgeCheck, CheckCircle2, ClipboardCheck } from "lucide-react";
+import { translations } from "@/lib/translations";
 
-const items = [
-  {
-    icon: BadgeCheck,
-    title: "Control de calidad",
-    text: "Cada pieza se verifica durante todo el proceso de fabricación para asegurar la máxima precisión.",
-  },
-  {
-    icon: ClipboardCheck,
-    title: "Mejora continua",
-    text: "Trabajamos con procesos estandarizados y una filosofía de mejora continua para garantizar la fiabilidad.",
-  },
-  {
-    icon: CheckCircle2,
-    title: "Compromiso",
-    text: "Nuestro objetivo es entregar productos que cumplan los requisitos técnicos y las expectativas del cliente.",
-  },
-];
+type QualityProps = {
+  locale: keyof typeof translations;
+};
 
-export default function Quality() {
+export default function Quality({ locale }: QualityProps) {
+  const t = translations[locale].quality;
+
+  const items = [
+    {
+      icon: BadgeCheck,
+      title: t.item1Title,
+      text: t.item1Text,
+    },
+    {
+      icon: ClipboardCheck,
+      title: t.item2Title,
+      text: t.item2Text,
+    },
+    {
+      icon: CheckCircle2,
+      title: t.item3Title,
+      text: t.item3Text,
+    },
+  ];
+
   return (
-    <section id="calidad" className="bg-white py-32">
+    <section id="quality" className="bg-white py-32">
       <div className="mx-auto max-w-7xl px-8">
-
         <div className="mb-20 text-center">
-
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">
-            CALIDAD
+            {t.subtitle}
           </p>
 
           <h2 className="text-5xl font-black text-slate-900">
-            La calidad forma parte
+            {t.title1}
             <br />
-            de cada proceso.
+            {t.title2}
           </h2>
 
           <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-slate-600">
-            Nuestro compromiso es ofrecer soluciones fiables,
-            repetibles y adaptadas a los estándares más exigentes
-            del sector industrial.
+            {t.description}
           </p>
-
         </div>
 
         <div className="grid gap-8 lg:grid-cols-3">
-
           {items.map((item) => {
             const Icon = item.icon;
 
@@ -64,13 +65,10 @@ export default function Quality() {
                 <p className="leading-8 text-slate-600">
                   {item.text}
                 </p>
-
               </div>
             );
           })}
-
         </div>
-
       </div>
     </section>
   );

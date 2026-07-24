@@ -1,44 +1,49 @@
 import Image from "next/image";
+import { translations } from "@/lib/translations";
 
-const machines = [
-  {
-    image: "/images/machinery/machine1.png",
-    title: "Centro de mecanizado",
-  },
-  {
-    image: "/images/machinery/machine2.png",
-    title: "Fabricación de matrices",
-  },
-  {
-    image: "/images/machinery/machine3.png",
-    title: "Procesos de precisión",
-  },
-  {
-    image: "/images/machinery/machine4.png",
-    title: "Producción industrial",
-  },
-];
+type MachineryProps = {
+  locale: keyof typeof translations;
+};
 
-export default function Machinery() {
+export default function Machinery({ locale }: MachineryProps) {
+  const t = translations[locale].machinery;
+
+  const machines = [
+    {
+      image: "/images/machinery/machine1.png",
+      title: t.machine1,
+    },
+    {
+      image: "/images/machinery/machine2.png",
+      title: t.machine2,
+    },
+    {
+      image: "/images/machinery/machine3.png",
+      title: t.machine3,
+    },
+    {
+      image: "/images/machinery/machine4.png",
+      title: t.machine4,
+    },
+  ];
+
   return (
-    <section id="maquinaria" className="bg-slate-100 py-32">
+    <section id="machinery" className="bg-slate-100 py-32">
       <div className="mx-auto max-w-7xl px-8">
 
         <div className="mb-20 max-w-3xl">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">
-            MAQUINARIA
+            {t.subtitle}
           </p>
 
           <h2 className="text-5xl font-black text-slate-900">
-            Tecnología para fabricar
+            {t.title1}
             <br />
-            con precisión.
+            {t.title2}
           </h2>
 
           <p className="mt-8 text-xl leading-9 text-slate-600">
-            Disponemos de un parque de maquinaria preparado para
-            fabricar matrices y componentes con la máxima precisión,
-            garantizando calidad y repetibilidad en cada proyecto.
+            {t.description}
           </p>
         </div>
 

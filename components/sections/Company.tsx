@@ -1,96 +1,92 @@
 import ImageSlider from "../ui/ImageSlider";
+import { translations } from "@/lib/translations";
 
-export default function Company() {
+type CompanyProps = {
+  locale: keyof typeof translations;
+};
+
+export default function Company({ locale }: CompanyProps) {
+  console.log("locale:", locale);
+  console.log("translations keys:", Object.keys(translations));
+  console.log("translations[locale]:", translations[locale]);
+
+  if (!translations[locale]) {
+    return (
+      <div style={{ color: "red", padding: "20px" }}>
+        Error: locale "{String(locale)}" no existe en translations.
+      </div>
+    );
+  }
+
+  const t = translations[locale].company;
+
   return (
     <section
       id="empresa"
       className="bg-white py-28"
     >
       <div className="mx-auto max-w-7xl px-8">
-
         <div className="mb-16 text-center">
-
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">
-            SOBRE GINCAT SYSTEM
+            {t.subtitle}
           </p>
 
           <h2 className="text-5xl font-black text-slate-900">
-            Más de 25 años fabricando
+            {t.title1}
             <br />
-            matrices de precisión.
+            {t.title2}
           </h2>
 
           <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-slate-600">
-            En Gincat diseñamos y fabricamos matrices,
-            utillajes y soluciones de estampación metálica
-            para clientes que buscan la máxima calidad,
-            precisión y fiabilidad.
+            {t.description}
           </p>
-
         </div>
 
         <div className="overflow-hidden rounded-3xl shadow-2xl">
-
-        <ImageSlider />
-
+          <ImageSlider />
         </div>
 
         <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-
           <div className="rounded-2xl border border-slate-200 p-8">
-
             <h3 className="mb-4 text-2xl font-bold text-slate-900">
-              Ingeniería
+              {t.card1Title}
             </h3>
 
-            <p className="text-slate-600 leading-8">
-              Desarrollo de matrices y soluciones adaptadas
-              a las necesidades de cada cliente.
+            <p className="leading-8 text-slate-600">
+              {t.card1Description}
             </p>
-
           </div>
 
           <div className="rounded-2xl border border-slate-200 p-8">
-
             <h3 className="mb-4 text-2xl font-bold text-slate-900">
-              Fabricación
+              {t.card2Title}
             </h3>
 
-            <p className="text-slate-600 leading-8">
-              Producción propia con maquinaria especializada
-              y procesos de alta precisión.
+            <p className="leading-8 text-slate-600">
+              {t.card2Description}
             </p>
-
           </div>
 
           <div className="rounded-2xl border border-slate-200 p-8">
-
             <h3 className="mb-4 text-2xl font-bold text-slate-900">
-              Calidad
+              {t.card3Title}
             </h3>
 
-            <p className="text-slate-600 leading-8">
-              Compromiso con la mejora continua y los
-              estándares exigidos por la industria.
+            <p className="leading-8 text-slate-600">
+              {t.card3Description}
             </p>
-
           </div>
 
           <div className="rounded-2xl border border-slate-200 p-8">
-
             <h3 className="mb-4 text-2xl font-bold text-slate-900">
-              Experiencia
+              {t.card4Title}
             </h3>
 
-            <p className="text-slate-600 leading-8">
-              Más de dos décadas ofreciendo soluciones
-              fiables para automoción e industria.
+            <p className="leading-8 text-slate-600">
+              {t.card4Description}
             </p>
-
           </div>
-
         </div>
-
       </div>
     </section>
   );

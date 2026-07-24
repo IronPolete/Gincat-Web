@@ -1,36 +1,39 @@
 import Image from "next/image";
+import { translations } from "@/lib/translations";
 
-const services = [
-  {
-    number: "01",
-    title: "Matricería",
-    description:
-      "Diseño, desarrollo y fabricación de matrices de alta precisión adaptadas a las necesidades de cada proyecto.",
-  },
-  {
-    number: "02",
-    title: "Estampación metálica",
-    description:
-      "Producción de piezas mediante estampación para series pequeñas, medianas y grandes, garantizando repetibilidad y calidad.",
-  },
-  {
-    number: "03",
-    title: "Soldadura",
-    description:
-      "Procesos de soldadura para componentes industriales con un alto nivel de exigencia técnica.",
-  },
-  {
-    number: "04",
-    title: "Utillajes",
-    description:
-      "Fabricación de útiles y soluciones a medida para optimizar los procesos productivos de nuestros clientes.",
-  },
-];
+type ServicesProps = {
+  locale: keyof typeof translations;
+};
 
-export default function Services() {
+export default function Services({ locale }: ServicesProps) {
+  const t = translations[locale].services;
+
+  const services = [
+    {
+      number: "01",
+      title: t.service1Title,
+      description: t.service1Description,
+    },
+    {
+      number: "02",
+      title: t.service2Title,
+      description: t.service2Description,
+    },
+    {
+      number: "03",
+      title: t.service3Title,
+      description: t.service3Description,
+    },
+    {
+      number: "04",
+      title: t.service4Title,
+      description: t.service4Description,
+    },
+  ];
+
   return (
     <section
-      id="servicios"
+      id="services"
       className="bg-white py-32"
     >
       <div className="mx-auto max-w-7xl px-8">
@@ -38,40 +41,34 @@ export default function Services() {
         <div className="mb-20 max-w-3xl">
 
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">
-            SERVICIOS
+            {t.subtitle}
           </p>
 
           <h2 className="text-5xl font-black text-slate-900">
-            Soluciones industriales
+            {t.title1}
             <br />
-            de principio a fin.
+            {t.title2}
           </h2>
 
           <p className="mt-8 text-xl leading-9 text-slate-600">
-            Acompañamos a nuestros clientes durante todo el proceso:
-            desde el diseño de la matriz hasta la fabricación final
-            de las piezas, ofreciendo un servicio integral y flexible.
+            {t.description}
           </p>
 
         </div>
 
         <div className="grid items-center gap-20 lg:grid-cols-2">
 
-          {/* Imagen */}
-
           <div className="overflow-hidden rounded-3xl shadow-2xl">
 
             <Image
               src="/images/company/company.png"
-              alt="Servicios Gincat"
+              alt={t.imageAlt}
               width={900}
               height={900}
               className="h-full w-full object-cover transition duration-700 hover:scale-105"
             />
 
           </div>
-
-          {/* Lista */}
 
           <div>
 

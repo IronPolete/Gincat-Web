@@ -1,12 +1,20 @@
-import Image from "next/image";
+"use client";
 
-export default function Hero() {
+import Image from "next/image";
+import { translations } from "@/lib/translations";
+
+type HeroProps = {
+  locale: keyof typeof translations;
+};
+
+export default function Hero({ locale }: HeroProps) {
+  const t = translations[locale].hero;
+
   return (
     <section
-  id="hero"
-  className="relative min-h-screen overflow-hidden"
->
-
+      id="hero"
+      className="relative min-h-screen overflow-hidden"
+    >
       {/* Imagen */}
 
       <Image
@@ -30,19 +38,17 @@ export default function Hero() {
           <div className="max-w-3xl">
 
             <p className="mb-5 text-xs font-semibold uppercase tracking-[0.35em] text-white/80 sm:text-sm">
-              GINCAT SYSTEM
+              {t.subtitle}
             </p>
 
             <h1 className="text-5xl font-black leading-none text-white sm:text-6xl lg:text-8xl">
-              Engineering
+              {t.title1}
               <br />
-              Precision.
+              {t.title2}
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-7 text-white/90 sm:text-lg lg:mt-8 lg:text-xl lg:leading-9">
-              Diseño y fabricación de matrices, estampación metálica y
-              soluciones industriales para clientes que buscan máxima
-              precisión, fiabilidad y calidad.
+              {t.description}
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row lg:mt-12">
@@ -51,14 +57,14 @@ export default function Hero() {
                 href="#contacto"
                 className="w-full rounded-md bg-white px-8 py-4 text-center text-base font-semibold text-slate-900 transition hover:bg-slate-200 sm:w-auto"
               >
-                Solicitar presupuesto
+                {t.button1}
               </a>
 
               <a
                 href="#servicios"
                 className="w-full rounded-md border border-white/40 px-8 py-4 text-center text-base font-semibold text-white transition hover:bg-white/10 sm:w-auto"
               >
-                Ver servicios
+                {t.button2}
               </a>
 
             </div>
@@ -68,11 +74,11 @@ export default function Hero() {
               <div>
 
                 <h2 className="text-4xl font-bold text-white lg:text-5xl">
-                  25+
+                  {t.years}
                 </h2>
 
                 <p className="mt-2 text-white/70">
-                  Años de experiencia
+                  {t.yearsText}
                 </p>
 
               </div>
@@ -80,11 +86,11 @@ export default function Hero() {
               <div>
 
                 <h2 className="text-4xl font-bold text-white lg:text-5xl">
-                  IATF
+                  {t.quality}
                 </h2>
 
                 <p className="mt-2 text-white/70">
-                  Sistema de calidad
+                  {t.qualityText}
                 </p>
 
               </div>
@@ -92,11 +98,11 @@ export default function Hero() {
               <div>
 
                 <h2 className="text-4xl font-bold text-white lg:text-5xl">
-                  100%
+                  {t.manufacturing}
                 </h2>
 
                 <p className="mt-2 text-white/70">
-                  Fabricación propia
+                  {t.manufacturingText}
                 </p>
 
               </div>

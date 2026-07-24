@@ -11,25 +11,44 @@ import Certifications from "@/components/sections/Certifications";
 import Contact from "@/components/sections/Contact";
 import Map from "@/components/sections/Map";
 import Footer from "@/components/sections/Footer";
-export default function Home() {
+
+import { translations } from "@/lib/translations";
+
+type Props = {
+  locale: keyof typeof translations;
+};
+
+export default function HomePage({ locale }: Props) {
   return (
     <>
-      <Navbar />
+      <Navbar locale={locale} />
 
       <main>
-        <Hero />
-        <Company />
-        <Capabilities />
-        <Services />
-        <WhyGincat />
-        <Quality />
-        <Machinery />
-        <Sectors />
-        <Certifications />
-        <Contact />
-        <Map />
+        <Hero locale={locale} />
+
+        <Company locale={locale} />
+
+        <Capabilities locale={locale} />
+
+        <Services locale={locale} />
+
+        <WhyGincat locale={locale} />
+
+        <Quality locale={locale} />
+
+        <Machinery locale={locale} />
+
+        <Sectors locale={locale} />
+
+        <Certifications locale={locale} />
+
+        {/* FORMULARIO PRESUPUESTO */}
+        <Contact locale={locale} />
+
+        <Map locale={locale} />
       </main>
-      <Footer />  
+
+      <Footer locale={locale} />
     </>
   );
 }
