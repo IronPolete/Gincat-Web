@@ -69,9 +69,9 @@ export default function Contact({ locale }: ContactProps) {
 
   return (
     <section
-      id="contact"
-      className="bg-slate-900 py-32"
-    >
+  id="contacto"
+  className="bg-slate-900 py-32"
+>
 
       <div className="mx-auto max-w-7xl px-8">
 

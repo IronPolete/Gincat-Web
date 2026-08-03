@@ -51,11 +51,11 @@ export default function Navbar({ locale }: NavbarProps) {
   }, [languageOpen]);
 
   const links = [
-    { title: t.company, href: "#empresa" },
-    { title: t.services, href: "#servicios" },
-    { title: t.quality, href: "#calidad" },
-    { title: t.machinery, href: "#maquinaria" },
-    { title: t.contact, href: "#contact" },
+    { title: t.company, href: `/${locale}#empresa` },
+    { title: t.services, href: `/${locale}#servicios` },
+    { title: t.quality, href: `/${locale}#calidad` },
+    { title: t.machinery, href: `/${locale}#maquinaria` },
+    { title: t.contact, href: `/${locale}#contacto` },
   ];
 
   return (
@@ -71,7 +71,7 @@ export default function Navbar({ locale }: NavbarProps) {
 
           {/* LOGO */}
 
-          <a href="#hero" className="z-50 flex items-center">
+          <a href={`/${locale}#hero`} className="z-50 flex items-center">
             <Image
               src={
                 scrolled
@@ -163,8 +163,9 @@ export default function Navbar({ locale }: NavbarProps) {
                 </div>
               )}
             </div>
-            <a
-  href="#contact"
+          
+  <a
+  href={`/${locale}#contacto`}
   className={`rounded-xl px-7 py-3.5 font-semibold transition-all duration-300 ${
                 scrolled
                   ? "bg-slate-900 text-white hover:bg-slate-800"
@@ -238,7 +239,7 @@ export default function Navbar({ locale }: NavbarProps) {
           </div>
 
           <a
-  href="#contact"
+  href={`/${locale}#contacto`}
   onClick={() => setMobileMenuOpen(false)}
             className="mt-10 rounded-xl bg-slate-900 py-5 text-center text-lg font-bold text-white"
           >

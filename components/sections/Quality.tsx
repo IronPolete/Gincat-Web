@@ -27,7 +27,7 @@ export default function Quality({ locale }: QualityProps) {
   ];
 
   return (
-    <section id="quality" className="bg-white py-32">
+    <section id="calidad" className="bg-white py-32">
       <div className="mx-auto max-w-7xl px-8">
         <div className="mb-20 text-center">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">

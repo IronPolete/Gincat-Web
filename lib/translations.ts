@@ -3,8 +3,8 @@ es: {
     hero: {
       subtitle: "GINCAT SYSTEM",
 
-      title1: "Engineering",
-      title2: "Precision.",
+      title1: "Ingeniería",
+      title2: "de precisión.",
 
       description:
         "Diseño y fabricación de matrices, estampación metálica y soluciones industriales para clientes que buscan máxima precisión, fiabilidad y calidad.",

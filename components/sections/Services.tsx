@@ -33,9 +33,9 @@ export default function Services({ locale }: ServicesProps) {
 
   return (
     <section
-      id="services"
-      className="bg-white py-32"
-    >
+    id="servicios"
+    className="bg-white py-32"
+  >
       <div className="mx-auto max-w-7xl px-8">
 
         <div className="mb-20 max-w-3xl">

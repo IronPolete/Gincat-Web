@@ -28,7 +28,7 @@ export default function Machinery({ locale }: MachineryProps) {
   ];
 
   return (
-    <section id="machinery" className="bg-slate-100 py-32">
+    <section id="maquinaria" className="bg-slate-100 py-32">
       <div className="mx-auto max-w-7xl px-8">
 
         <div className="mb-20 max-w-3xl">
