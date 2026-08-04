@@ -61,7 +61,7 @@ export default function Services({ locale }: ServicesProps) {
           <div className="overflow-hidden rounded-3xl shadow-2xl">
 
             <Image
-              src="/images/company/company.png"
+              src="/images/company/company1.png"
               alt={t.imageAlt}
               width={900}
               height={900}
