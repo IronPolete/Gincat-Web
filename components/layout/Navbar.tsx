@@ -51,11 +51,12 @@ export default function Navbar({ locale }: NavbarProps) {
   }, [languageOpen]);
 
   const links = [
-    { title: t.company, href: `/${locale}#empresa` },
-    { title: t.services, href: `/${locale}#servicios` },
-    { title: t.quality, href: `/${locale}#calidad` },
-    { title: t.machinery, href: `/${locale}#maquinaria` },
-    { title: t.contact, href: `/${locale}#contacto` },
+    { title: t.company, href: "#empresa" },
+    { title: t.services, href: "#servicios" },
+    { title: t.quality, href: "#calidad" },
+    { title: t.machinery, href: "#maquinaria" },
+    { title: t.news, href: "#noticias" },
+    { title: t.contact, href: "#contacto" },
   ];
 
   return (

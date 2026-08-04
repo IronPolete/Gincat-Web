@@ -1,0 +1,82 @@
+export const news = [
+    {
+      id: 1,
+      date: "29/07/2026",
+  
+      title: {
+        es: "Nueva maquina de visión KEYENCE",
+        en: "New vision machine KEYENCE",
+        fr: "Nouvelle machine de vision KEYENCE",
+        de: "Neue Visionmaschine KEYENCE",
+        ca: "Nova màquina de visió KEYENCE",
+        zh: "新视觉机器 KEYENCE",
+        ja: "新しい視覚機械 KEYENCE",
+      },
+  
+      description: {
+        es: "Gincat System incorpora una nueva maquina para augmentar la calidad y eficiencia de nuestros productos.",
+        en: "Gincat System incorporates a new machine to increase the quality and efficiency of our products.",
+        fr: "Gincat System intègre une nouvelle machine pour augmenter la qualité et l'efficacité de nos produits.",
+        de: "Gincat System erweitert seine Produktion mit einer neuen Maschine zur Verbesserung der Qualität und Effizienz unserer Produkte.",
+        ca: "Gincat System incorpora una nova màquina per augmentar la qualitat i l'eficiència dels nostres productes.",
+        zh: "Gincat System 引进了一台新的视觉机器，以提高产品质量和效率。",
+        ja: "Gincat Systemは、新しい視覚機械を導入して、製品の品質と効率を向上させます。",
+      },
+  
+      image: "/images/news/news3.jpg",
+    },
+  
+    {
+      id: 2,
+      date: "20/07/2026",
+  
+      title: {
+        es: "Nuevo proyecto de col·laboración deportiva",
+        en: "New sports collaboration project",
+        fr: "Nouveau projet de collaboration sportive",
+        de: "Neues Sportprojekt",
+        ca: "Nou projecte de col·laboració esportiva",
+        zh: "新的体育合作项目",
+        ja: "新しいスポーツコラボレーションプロジェクト",
+      },
+  
+      description: {
+        es: "Comenzamos una nueva col·laboración con la Asociación Sant Fruitós Esports.",
+        en: "We have started a new collaboration with the Sant Fruitós Esports Association.",
+        fr: "Nous lançons un nouveau projet de collaboration avec l'Asociation Sant Fruitós Esports.",
+        de: "Wir starten ein neues Projekt mit der Sant Fruitós Esports Association.",
+        ca: "Iniciem un nou projecte de col·laboració amb la Asociació Sant Fruitós Esports.",
+        zh: "我们开始与圣水果运动协会合作。",
+        ja: "聖果運動協会との新しいコラボレーションを開始しました。",
+      },
+  
+      image: "/images/news/news2.jpg",
+    },
+  
+    {
+      id: 3,
+      date: "15/05/2026",
+  
+      title: {
+        es: "Estamos en proceso de obtención de la IATF16949.",
+        en: "We are in the process of obtaining the IATF16949.",
+        fr: "Nous sommes en train d'obtenir la IATF16949.",
+        de: "Wir sind im Prozess der Erhaltung der IATF16949.",
+        ca: "Estem en procés d'obtenció de la IATF16949.",
+        zh: "我们正在努力获得 IATF16949 认证。",
+        ja: "IATF16949 認証を取得するためのプロセスに入っています。",
+      },
+  
+      description: {
+        es: "Estamos trabajando en la obtención de la IATF16949 para mejorar la calidad y eficiencia de nuestros productos.",
+        en: "We are working on obtaining the IATF16949 to improve the quality and efficiency of our products.",
+        fr: "Nous travaillons à l'obtention de la IATF16949 pour améliorer la qualité et l'efficacité de nos produits.",
+        de: "Wir arbeiten an der Erhaltung der IATF16949, um die Qualität und Effizienz unserer Produkte zu verbessern.",
+        ca: "Estem treballant en la obtenció de la IATF16949 per millorar la qualitat i l'eficiència de les nostres productes.",
+        zh: "我们正在努力获得 IATF16949 认证，以提高产品质量和效率。",
+        ja: "IATF16949 認証を取得し、製品の品質と効率を向上させるために努力しています。",
+      },
+  
+      image: "/images/news/news1.jpg",
+    },
+  ];

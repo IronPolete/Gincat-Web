@@ -6,6 +6,7 @@ import Services from "@/components/sections/Services";
 import WhyGincat from "@/components/sections/WhyGincat";
 import Quality from "@/components/sections/Quality";
 import Machinery from "@/components/sections/Machinery";
+import News from "@/components/sections/News";
 import Sectors from "@/components/sections/Sectors";
 import Certifications from "@/components/sections/Certifications";
 import Contact from "@/components/sections/Contact";
@@ -38,11 +39,12 @@ export default function HomePage({ locale }: Props) {
 
         <Machinery locale={locale} />
 
+        <News locale={locale} />
+
         <Sectors locale={locale} />
 
         <Certifications locale={locale} />
 
-        {/* FORMULARIO PRESUPUESTO */}
         <Contact locale={locale} />
 
         <Map locale={locale} />

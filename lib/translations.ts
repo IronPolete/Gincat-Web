@@ -28,7 +28,16 @@ es: {
       quality: "Calidad",
       machinery: "Maquinaria",
       contact: "Contacto",
+      news: "Noticias",
       quote: "Solicitar presupuesto",
+    },
+
+    news: {
+      subtitle: "NOTICIAS",
+      title1: "Últimas novedades",
+      title2: "de Gincat System.",
+      description:
+        "Descubre los últimos proyectos, incorporaciones, certificaciones y noticias de nuestra empresa.",
     },
 
     company: {
@@ -304,9 +313,18 @@ es: {
         quality: "Quality",
         machinery: "Machinery",
         contact: "Contact",
+        news: "News",
         quote: "Request a Quote",
       },
   
+      news: {
+        subtitle: "NEWS",
+        title1: "Latest news",
+        title2: "from Gincat System.",
+        description:
+          "Discover our latest projects, new machinery, certifications and company updates.",
+      },
+
       company: {
         subtitle: "ABOUT GINCAT SYSTEM",
   
@@ -580,9 +598,18 @@ es: {
         quality: "Qualité",
         machinery: "Machines",
         contact: "Contact",
+        news: "Actualités",
         quote: "Demander un devis",
       },
   
+      news: {
+        subtitle: "ACTUALITÉS",
+        title1: "Les dernières nouveautés",
+        title2: "de Gincat System.",
+        description:
+          "Découvrez nos derniers projets, nouvelles machines, certifications et actualités de l'entreprise.",
+      },
+
       company: {
         subtitle: "À PROPOS DE GINCAT SYSTEM",
   
@@ -865,9 +892,18 @@ es: {
         quality: "Qualität",
         machinery: "Maschinen",
         contact: "Kontakt",
+        news: "Neuigkeiten",
         quote: "Angebot anfordern",
       },
   
+      news: {
+        subtitle: "NEUIGKEITEN",
+        title1: "Neueste Nachrichten",
+        title2: "von Gincat System.",
+        description:
+          "Entdecken Sie unsere neuesten Projekte, Maschinen, Zertifizierungen und Unternehmensnachrichten.",
+      },
+
       company: {
         subtitle: "ÜBER GINCAT SYSTEM",
   
@@ -1141,9 +1177,18 @@ es: {
         quality: "Qualitat",
         machinery: "Maquinària",
         contact: "Contacte",
+        news: "Notícies",
         quote: "Sol·licitar pressupost",
       },
   
+      news: {
+        subtitle: "NOTÍCIES",
+        title1: "Últimes novetats",
+        title2: "de Gincat System.",
+        description:
+          "Descobreix els últims projectes, incorporacions, certificacions i notícies de la nostra empresa.",
+      },
+      
       company: {
         subtitle: "SOBRE GINCAT SYSTEM",
   
@@ -1417,9 +1462,18 @@ es: {
         quality: "质量",
         machinery: "设备",
         contact: "联系我们",
+        news: "新闻",
         quote: "申请报价",
       },
   
+      news: {
+        subtitle: "新闻",
+        title1: "GINCAT SYSTEM",
+        title2: "最新动态",
+        description:
+          "了解我们的最新项目、新设备、认证以及公司的最新消息。",
+      },
+
       company: {
         subtitle: "关于 GINCAT SYSTEM",
   
@@ -1694,9 +1748,18 @@ es: {
         quality: "品質",
         machinery: "設備",
         contact: "お問い合わせ",
+        news: "ニュース",
         quote: "見積もり依頼",
       },
   
+      news: {
+        subtitle: "ニュース",
+        title1: "GINCAT SYSTEM",
+        title2: "最新情報",
+        description:
+          "最新プロジェクト、新設備、認証取得、会社からのお知らせをご覧ください。",
+      },
+
       company: {
         subtitle: "GINCAT SYSTEMについて",
   
