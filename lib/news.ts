@@ -23,7 +23,7 @@ export const news = [
         ja: "Gincat Systemは、新しい視覚機械を導入して、製品の品質と効率を向上させます。",
       },
   
-      image: "/images/news/news3.jpg",
+      image: "/images/news/keyence.jpg",
     },
   
     {
@@ -50,7 +50,7 @@ export const news = [
         ja: "聖果運動協会との新しいコラボレーションを開始しました。",
       },
   
-      image: "/images/news/news2.jpg",
+      image: "/images/news/asfe.jpg",
     },
   
     {
@@ -77,6 +77,6 @@ export const news = [
         ja: "IATF16949 認証を取得し、製品の品質と効率を向上させるために努力しています。",
       },
   
-      image: "/images/news/news1.jpg",
+      image: "/images/news/iatf.jpg",
     },
   ];
