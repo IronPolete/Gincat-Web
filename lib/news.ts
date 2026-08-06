@@ -26,32 +26,7 @@ export const news = [
       image: "/images/news/keyence.jpg",
     },
   
-    {
-      id: 2,
-      date: "20/07/2026",
-  
-      title: {
-        es: "Nuevo proyecto de col·laboración deportiva",
-        en: "New sports collaboration project",
-        fr: "Nouveau projet de collaboration sportive",
-        de: "Neues Sportprojekt",
-        ca: "Nou projecte de col·laboració esportiva",
-        zh: "新的体育合作项目",
-        ja: "新しいスポーツコラボレーションプロジェクト",
-      },
-  
-      description: {
-        es: "Comenzamos una nueva col·laboración con la Asociación Sant Fruitós Esports.",
-        en: "We have started a new collaboration with the Sant Fruitós Esports Association.",
-        fr: "Nous lançons un nouveau projet de collaboration avec l'Asociation Sant Fruitós Esports.",
-        de: "Wir starten ein neues Projekt mit der Sant Fruitós Esports Association.",
-        ca: "Iniciem un nou projecte de col·laboració amb la Asociació Sant Fruitós Esports.",
-        zh: "我们开始与圣水果运动协会合作。",
-        ja: "聖果運動協会との新しいコラボレーションを開始しました。",
-      },
-  
-      image: "/images/news/asfe.jpg",
-    },
+    
   
     {
       id: 3,
