@@ -15,7 +15,7 @@ export default function Machinery({ locale }: MachineryProps) {
       contain: false,
     },
     {
-      image: "/images/machinery/PHOTOA.jfif",
+      image: "/images/machinery/PHOTOA.jpg",
       title: t.machine3,
       contain: true,
     },
