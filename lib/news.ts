@@ -58,13 +58,13 @@ export const news = [
     date: "02/10/2024",
 
     title: {
-      es: "Nueva máquina Mitsubishi MV2400S de electroerosión por hilo",
-      en: "New Mitsubishi MV2400S wire EDM machine",
-      fr: "Nouvelle machine d'électroérosion à fil Mitsubishi MV2400S",
-      de: "Neue Mitsubishi MV2400S Drahterodiermaschine",
-      ca: "Nova màquina Mitsubishi MV2400S d'electroerosió per fil",
-      zh: "全新三菱 MV2400S 线切割放电加工机",
-      ja: "新しい三菱 MV2400S ワイヤ放電加工機",
+      es: "Nueva máquina Mitsubishi de electroerosión por hilo",
+      en: "New Mitsubishi wire EDM machine",
+      fr: "Nouvelle machine d'électroérosion à fil Mitsubishi",
+      de: "Neue Mitsubishi Drahterodiermaschine",
+      ca: "Nova màquina Mitsubishi d'electroerosió per fil",
+      zh: "全新三菱 线切割放电加工机",
+      ja: "新しい三菱 ワイヤ放電加工機",
     },
 
     description: {
