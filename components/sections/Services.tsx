@@ -29,16 +29,26 @@ export default function Services({ locale }: ServicesProps) {
       title: t.service4Title,
       description: t.service4Description,
     },
+    {
+      number: "05",
+      title: t.service5Title,
+      description: t.service5Description,
+    },
+    {
+      number: "06",
+      title: t.service6Title,
+      description: t.service6Description,
+    },
   ];
 
   return (
     <section
-    id="servicios"
-    className="bg-white py-32"
-  >
+      id="servicios"
+      className="bg-white py-32"
+    >
       <div className="mx-auto max-w-7xl px-8">
 
-        <div className="mb-20 max-w-3xl">
+        <div className="mb-20 max-w-4xl">
 
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">
             {t.subtitle}
@@ -83,7 +93,7 @@ export default function Services({ locale }: ServicesProps) {
                     {service.number}
                   </span>
 
-                  <div className="h-8 w-px bg-slate-300"></div>
+                  <div className="h-8 w-px bg-slate-300" />
 
                   <h3 className="text-3xl font-bold text-slate-900">
                     {service.title}

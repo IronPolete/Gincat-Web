@@ -1,10 +1,10 @@
 export const translations = {
-es: {
+  es: {
     hero: {
       subtitle: "GINCAT SYSTEM",
 
-      title1: "Ingeniería",
-      title2: "de precisión.",
+      title1: "Engineering",
+      title2: "Precision.",
 
       description:
         "Diseño y fabricación de matrices, estampación metálica y soluciones industriales para clientes que buscan máxima precisión, fiabilidad y calidad.",
@@ -30,14 +30,6 @@ es: {
       contact: "Contacto",
       news: "Noticias",
       quote: "Solicitar presupuesto",
-    },
-
-    news: {
-      subtitle: "NOTICIAS",
-      title1: "Últimas novedades",
-      title2: "de Gincat System.",
-      description:
-        "Descubre los últimos proyectos, incorporaciones, certificaciones y noticias de nuestra empresa.",
     },
 
     company: {
@@ -92,32 +84,67 @@ es: {
         "Inspección continua durante todo el proceso productivo para garantizar la máxima fiabilidad.",
     },
 
+
     services: {
+
       subtitle: "SERVICIOS",
 
-      title1: "Soluciones",
-      title2: "a medida.",
+
+      title1: "Todo el proceso",
+
+      title2: "en un solo lugar",
+
 
       description:
-        "Acompañamos al cliente durante todo el proceso, desde el diseño inicial hasta la fabricación final de las piezas.",
+
+        "Gestionamos el proceso completo, desde el diseño y fabricación de las matrices hasta la estampación, los procesos externos y el empaquetado final.",
+
 
       imageAlt: "Fabricación industrial",
 
+
       service1Title: "Diseño de matrices",
+
       service1Description:
+
         "Ingeniería y desarrollo de matrices progresivas adaptadas a cada necesidad.",
 
-      service2Title: "Fabricación",
+
+      service2Title: "Fabricación de matrices",
+
       service2Description:
-        "Producción propia mediante procesos de estampación metálica de alta precisión.",
+
+        "Fabricación propia de matrices de alta precisión.",
+
 
       service3Title: "Mantenimiento",
+
       service3Description:
+
         "Reparación, ajuste y mantenimiento preventivo de matrices y utillajes.",
 
-      service4Title: "Asesoramiento técnico",
+
+      service4Title: "Estampación",
+
       service4Description:
-        "Soporte técnico personalizado para optimizar cada proyecto industrial.",
+
+        "Estampación metálica de precisión para garantizar calidad y repetibilidad.",
+
+
+      service5Title: "Procesos externos",
+
+      service5Description:
+
+        "Gestión y coordinación de procesos externos necesarios para completar el producto.",
+
+
+      service6Title: "Empaquetado",
+
+      service6Description:
+
+        "Preparación y empaquetado final del producto para su entrega.",
+
+
     },
     whyGincat: {
       subtitle: "POR QUÉ GINCAT",
@@ -249,6 +276,26 @@ es: {
       button: "Enviar solicitud",
     },
 
+    map: {
+      subtitle: "UBICACIÓN",
+      title: "Dónde estamos",
+      description: "Visítanos en nuestras instalaciones.",
+      address: "Dirección",
+      schedule: "Horario",
+      weekdays: "De lunes a viernes",
+      directions: "Cómo llegar",
+      directionsText: "Consulta nuestra ubicación y planifica tu ruta.",
+      button: "Ver en Google Maps",
+    },
+  
+    news: {
+      subtitle: "NOTICIAS",
+      title1: "Actualidad",
+      title2: "Gincat System.",
+      description:
+        "Descubre las últimas novedades, proyectos y noticias de Gincat System.",
+    },
+
     footer: {
       description:
         "Especialistas en diseño y fabricación de matrices, estampación metálica y soluciones industriales de alta precisión.",
@@ -269,22 +316,8 @@ es: {
 
       designed: "Diseñado y desarrollado por Gincat System.",
     },
-    map: {
-      subtitle: "VISÍTANOS",
-      title: "Estamos cerca de ti.",
-      description:
-        "Nuestro centro productivo está ubicado en Sant Fruitós de Bages, desde donde diseñamos, fabricamos y desarrollamos soluciones de matricería y estampación metálica para clientes de toda España.",
-      address: "Dirección",
-      schedule: "Horario",
-      weekdays: "Lunes a Viernes",
-      directions: "Cómo llegar",
-      directionsText:
-        "Consulta la ruta directamente desde Google Maps y planifica tu visita a nuestras instalaciones.",
-      button: "Abrir Google Maps →",
-    },
   },
-
-  en: {
+    en: {
       hero: {
         subtitle: "GINCAT SYSTEM",
   
@@ -317,14 +350,6 @@ es: {
         quote: "Request a Quote",
       },
   
-      news: {
-        subtitle: "NEWS",
-        title1: "Latest news",
-        title2: "from Gincat System.",
-        description:
-          "Discover our latest projects, new machinery, certifications and company updates.",
-      },
-
       company: {
         subtitle: "ABOUT GINCAT SYSTEM",
   
@@ -376,33 +401,68 @@ es: {
         item4Description:
           "Continuous inspection throughout the production process to guarantee maximum reliability.",
       },
+
   
       services: {
-        subtitle: "SERVICES",
   
-        title1: "Tailor-made",
-        title2: "Solutions.",
+        subtitle: "SERVICES",
+
+  
+        title1: "The entire process",
+  
+        title2: "in one place",
+
   
         description:
-          "We support our customers throughout the entire project, from engineering and design to final production.",
+  
+          "We manage the entire process, from die design and manufacturing to metal stamping, external processes and final packaging.",
+
   
         imageAlt: "Industrial Manufacturing",
+
   
-        service1Title: "Tool Design",
+        service1Title: "Die Design",
+  
         service1Description:
-          "Engineering and development of progressive dies designed for each application.",
   
-        service2Title: "Manufacturing",
+          "Engineering and development of progressive dies tailored to each requirement.",
+
+  
+        service2Title: "Die Manufacturing",
+  
         service2Description:
-          "High-precision in-house metal stamping production.",
+  
+          "In-house manufacturing of high-precision dies.",
+
   
         service3Title: "Maintenance",
-        service3Description:
-          "Repair, adjustment and preventive maintenance of tooling and dies.",
   
-        service4Title: "Technical Support",
+        service3Description:
+  
+          "Repair, adjustment and preventive maintenance of dies and tooling.",
+
+  
+        service4Title: "Metal Stamping",
+  
         service4Description:
-          "Personalized technical assistance to optimize every industrial project.",
+  
+          "Precision metal stamping to guarantee quality and repeatability.",
+
+  
+        service5Title: "External Processes",
+  
+        service5Description:
+  
+          "Management and coordination of external processes required to complete the product.",
+
+  
+        service6Title: "Packaging",
+  
+        service6Description:
+  
+          "Final preparation and packaging of the product for delivery.",
+
+  
       },
       whyGincat: {
         subtitle: "WHY GINCAT",
@@ -534,6 +594,26 @@ es: {
         button: "Send Request",
       },
   
+      map: {
+        subtitle: "LOCATION",
+        title: "Where we are",
+        description: "Visit us at our facilities.",
+        address: "Address",
+        schedule: "Opening hours",
+        weekdays: "Monday to Friday",
+        directions: "How to get there",
+        directionsText: "Check our location and plan your route.",
+        button: "View on Google Maps",
+      },
+
+      news: {
+        subtitle: "NEWS",
+        title1: "Latest",
+        title2: "from Gincat System.",
+        description:
+          "Discover the latest news, projects and updates from Gincat System.",
+      },
+
       footer: {
         description:
           "Specialists in tooling design, metal stamping and high-precision industrial manufacturing solutions.",
@@ -554,21 +634,7 @@ es: {
   
         designed: "Designed and developed by Gincat System.",
       },
-      map: {
-        subtitle: "VISIT US",
-        title: "We're close to you.",
-        description:
-          "Our production center is located in Sant Fruitós de Bages, where we design, manufacture and develop tooling and metal stamping solutions for customers across Spain.",
-        address: "Address",
-        schedule: "Business Hours",
-        weekdays: "Monday to Friday",
-        directions: "How to get here",
-        directionsText:
-          "View the route directly in Google Maps and plan your visit to our facilities.",
-        button: "Open Google Maps →",
-      },
     },
-  
     fr: {
       hero: {
         subtitle: "GINCAT SYSTEM",
@@ -602,14 +668,6 @@ es: {
         quote: "Demander un devis",
       },
   
-      news: {
-        subtitle: "ACTUALITÉS",
-        title1: "Les dernières nouveautés",
-        title2: "de Gincat System.",
-        description:
-          "Découvrez nos derniers projets, nouvelles machines, certifications et actualités de l'entreprise.",
-      },
-
       company: {
         subtitle: "À PROPOS DE GINCAT SYSTEM",
   
@@ -666,37 +724,68 @@ es: {
         item4Description:
           "Inspection continue durant tout le processus de fabrication afin de garantir une fiabilité maximale.",
       },
+
   
       services: {
-        subtitle: "SERVICES",
   
-        title1: "Solutions",
-        title2: "sur mesure.",
+        subtitle: "SERVICES",
+
+  
+        title1: "Tout le processus",
+  
+        title2: "au même endroit",
+
   
         description:
-          "Nous accompagnons nos clients de la conception jusqu'à la fabrication finale des pièces.",
+  
+          "Nous gérons l’ensemble du processus, de la conception et de la fabrication des matrices jusqu’à l’emboutissage, aux processus externes et au conditionnement final.",
+
   
         imageAlt: "Fabrication industrielle",
+
   
         service1Title: "Conception de matrices",
   
         service1Description:
-          "Ingénierie et développement de matrices progressives adaptées à chaque application.",
   
-        service2Title: "Fabrication",
+          "Ingénierie et développement de matrices progressives adaptées à chaque besoin.",
+
+  
+        service2Title: "Fabrication de matrices",
   
         service2Description:
-          "Production interne par emboutissage métallique de haute précision.",
+  
+          "Fabrication interne de matrices de haute précision.",
+
   
         service3Title: "Maintenance",
   
         service3Description:
-          "Réparation, réglage et maintenance préventive des matrices et outillages.",
   
-        service4Title: "Support technique",
+          "Réparation, réglage et maintenance préventive des matrices et outillages.",
+
+  
+        service4Title: "Emboutissage",
   
         service4Description:
-          "Assistance technique personnalisée afin d'optimiser chaque projet industriel.",
+  
+          "Emboutissage métallique de précision pour garantir qualité et répétabilité.",
+
+  
+        service5Title: "Processus externes",
+  
+        service5Description:
+  
+          "Gestion et coordination des processus externes nécessaires pour finaliser le produit.",
+
+  
+        service6Title: "Conditionnement",
+  
+        service6Description:
+  
+          "Préparation et conditionnement final du produit pour sa livraison.",
+
+  
       },
       whyGincat: {
         subtitle: "POURQUOI GINCAT",
@@ -828,6 +917,26 @@ es: {
         button: "Envoyer la demande",
       },
   
+      map: {
+        subtitle: "LOCALISATION",
+        title: "Où nous trouver",
+        description: "Visitez nos installations.",
+        address: "Adresse",
+        schedule: "Horaires",
+        weekdays: "Du lundi au vendredi",
+        directions: "Comment venir",
+        directionsText: "Consultez notre emplacement et planifiez votre itinéraire.",
+        button: "Voir sur Google Maps",
+      },
+
+      news: {
+        subtitle: "ACTUALITÉS",
+        title1: "Actualités",
+        title2: "de Gincat System.",
+        description:
+          "Découvrez les dernières nouveautés, projets et actualités de Gincat System.",
+      },
+
       footer: {
         description:
           "Spécialistes de la conception de matrices, de l'emboutissage métallique et des solutions industrielles de haute précision.",
@@ -848,21 +957,7 @@ es: {
   
         designed: "Conçu et développé par Gincat System.",
       },
-      map: {
-        subtitle: "VISITEZ-NOUS",
-        title: "Nous sommes près de chez vous.",
-        description:
-          "Notre centre de production est situé à Sant Fruitós de Bages, où nous concevons, fabriquons et développons des solutions d'outillage et d'emboutissage métallique pour des clients dans toute l'Espagne.",
-        address: "Adresse",
-        schedule: "Horaires",
-        weekdays: "Lundi à vendredi",
-        directions: "Comment venir",
-        directionsText:
-          "Consultez l'itinéraire directement dans Google Maps et planifiez votre visite de nos installations.",
-        button: "Ouvrir Google Maps →",
-      },
     },
-
     de: {
       hero: {
         subtitle: "GINCAT SYSTEM",
@@ -892,18 +987,10 @@ es: {
         quality: "Qualität",
         machinery: "Maschinen",
         contact: "Kontakt",
-        news: "Neuigkeiten",
+        news: "News",
         quote: "Angebot anfordern",
       },
   
-      news: {
-        subtitle: "NEUIGKEITEN",
-        title1: "Neueste Nachrichten",
-        title2: "von Gincat System.",
-        description:
-          "Entdecken Sie unsere neuesten Projekte, Maschinen, Zertifizierungen und Unternehmensnachrichten.",
-      },
-
       company: {
         subtitle: "ÜBER GINCAT SYSTEM",
   
@@ -955,33 +1042,68 @@ es: {
         item4Description:
           "Kontinuierliche Prüfungen während des gesamten Produktionsprozesses.",
       },
+
   
       services: {
-        subtitle: "DIENSTLEISTUNGEN",
   
-        title1: "Maßgeschneiderte",
-        title2: "Lösungen.",
+        subtitle: "DIENSTLEISTUNGEN",
+
+  
+        title1: "Der gesamte Prozess",
+  
+        title2: "an einem Ort",
+
   
         description:
-          "Wir begleiten unsere Kunden vom Engineering bis zur Serienproduktion.",
+  
+          "Wir übernehmen den gesamten Prozess – von der Konstruktion und Fertigung der Werkzeuge bis zum Stanzen, externen Prozessen und der finalen Verpackung.",
+
   
         imageAlt: "Industrielle Fertigung",
+
   
-        service1Title: "Werkzeugentwicklung",
+        service1Title: "Werkzeugkonstruktion",
+  
         service1Description:
-          "Entwicklung von Folgeverbundwerkzeugen für jede Anwendung.",
   
-        service2Title: "Fertigung",
+          "Entwicklung und Konstruktion von Folgeverbundwerkzeugen nach den Anforderungen jedes Projekts.",
+
+  
+        service2Title: "Werkzeugfertigung",
+  
         service2Description:
-          "Eigene hochpräzise Metallumformung.",
+  
+          "Eigene Fertigung hochpräziser Werkzeuge.",
+
   
         service3Title: "Wartung",
-        service3Description:
-          "Reparatur, Optimierung und vorbeugende Wartung von Werkzeugen.",
   
-        service4Title: "Technische Beratung",
+        service3Description:
+  
+          "Reparatur, Einstellung und vorbeugende Wartung von Werkzeugen und Stanzwerkzeugen.",
+
+  
+        service4Title: "Metallstanzen",
+  
         service4Description:
-          "Persönliche technische Unterstützung für jedes Industrieprojekt.",
+  
+          "Präzisionsstanzen zur Gewährleistung von Qualität und Wiederholgenauigkeit.",
+
+  
+        service5Title: "Externe Prozesse",
+  
+        service5Description:
+  
+          "Koordination und Verwaltung externer Prozesse zur Fertigstellung des Produkts.",
+
+  
+        service6Title: "Verpackung",
+  
+        service6Description:
+  
+          "Vorbereitung und abschließende Verpackung des Produkts für die Auslieferung.",
+
+  
       },
       whyGincat: {
         subtitle: "WARUM GINCAT",
@@ -1113,6 +1235,26 @@ es: {
         button: "Anfrage senden",
       },
   
+      map: {
+        subtitle: "STANDORT",
+        title: "Wo Sie uns finden",
+        description: "Besuchen Sie unsere Einrichtungen.",
+        address: "Adresse",
+        schedule: "Öffnungszeiten",
+        weekdays: "Montag bis Freitag",
+        directions: "Anfahrt",
+        directionsText: "Sehen Sie unseren Standort und planen Sie Ihre Route.",
+        button: "Auf Google Maps anzeigen",
+      },
+
+      news: {
+        subtitle: "NEWS",
+        title1: "Aktuelles",
+        title2: "von Gincat System.",
+        description:
+          "Entdecken Sie die neuesten Nachrichten, Projekte und Entwicklungen von Gincat System.",
+      },
+
       footer: {
         description:
           "Spezialisten für Werkzeugbau, Metallumformung und hochpräzise industrielle Fertigungslösungen.",
@@ -1133,21 +1275,7 @@ es: {
   
         designed: "Entwickelt und gestaltet von Gincat System.",
       },
-      map: {
-        subtitle: "BESUCHEN SIE UNS",
-        title: "Wir sind ganz in Ihrer Nähe.",
-        description:
-          "Unser Produktionszentrum befindet sich in Sant Fruitós de Bages, wo wir Werkzeuge und Lösungen für die Metallumformung entwickeln und fertigen – für Kunden in ganz Spanien.",
-        address: "Adresse",
-        schedule: "Öffnungszeiten",
-        weekdays: "Montag bis Freitag",
-        directions: "Anfahrt",
-        directionsText:
-          "Rufen Sie die Route direkt in Google Maps auf und planen Sie Ihren Besuch.",
-        button: "Google Maps öffnen →",
-      },
     },
-
     ca: {
       hero: {
         subtitle: "GINCAT SYSTEM",
@@ -1181,14 +1309,6 @@ es: {
         quote: "Sol·licitar pressupost",
       },
   
-      news: {
-        subtitle: "NOTÍCIES",
-        title1: "Últimes novetats",
-        title2: "de Gincat System.",
-        description:
-          "Descobreix els últims projectes, incorporacions, certificacions i notícies de la nostra empresa.",
-      },
-      
       company: {
         subtitle: "SOBRE GINCAT SYSTEM",
   
@@ -1240,33 +1360,68 @@ es: {
         item4Description:
           "Inspecció contínua durant tot el procés productiu per garantir la màxima fiabilitat.",
       },
+
   
       services: {
-        subtitle: "SERVEIS",
   
-        title1: "Solucions",
-        title2: "a mida.",
+        subtitle: "SERVEIS",
+
+  
+        title1: "Tot el procés",
+  
+        title2: "en un sol lloc",
+
   
         description:
-          "Acompanyem els nostres clients des del disseny inicial fins a la fabricació final de les peces.",
+  
+          "Gestionem tot el procés, des del disseny i la fabricació de les matrius fins a l’estampació, els processos externs i l’empaquetat final.",
+
   
         imageAlt: "Fabricació industrial",
+
   
         service1Title: "Disseny de matrius",
-        service1Description:
-          "Enginyeria i desenvolupament de matrius progressives adaptades a cada necessitat.",
   
-        service2Title: "Fabricació",
+        service1Description:
+  
+          "Enginyeria i desenvolupament de matrius progressives adaptades a cada necessitat.",
+
+  
+        service2Title: "Fabricació de matrius",
+  
         service2Description:
-          "Producció pròpia mitjançant processos d'estampació metàl·lica d'alta precisió.",
+  
+          "Fabricació pròpia de matrius d’alta precisió.",
+
   
         service3Title: "Manteniment",
-        service3Description:
-          "Reparació, ajust i manteniment preventiu de matrius i utillatges.",
   
-        service4Title: "Assessorament tècnic",
+        service3Description:
+  
+          "Reparació, ajust i manteniment preventiu de matrius i utillatges.",
+
+  
+        service4Title: "Estampació",
+  
         service4Description:
-          "Suport tècnic personalitzat per optimitzar cada projecte industrial.",
+  
+          "Estampació metàl·lica de precisió per garantir la qualitat i la repetibilitat.",
+
+  
+        service5Title: "Processos externs",
+  
+        service5Description:
+  
+          "Gestió i coordinació dels processos externs necessaris per completar el producte.",
+
+  
+        service6Title: "Empaquetat",
+  
+        service6Description:
+  
+          "Preparació i empaquetat final del producte per al seu lliurament.",
+
+  
       },
       whyGincat: {
         subtitle: "PER QUÈ GINCAT",
@@ -1398,6 +1553,26 @@ es: {
         button: "Enviar sol·licitud",
       },
   
+      map: {
+        subtitle: "UBICACIÓ",
+        title: "On som",
+        description: "Visita les nostres instal·lacions.",
+        address: "Adreça",
+        schedule: "Horari",
+        weekdays: "De dilluns a divendres",
+        directions: "Com arribar",
+        directionsText: "Consulta la nostra ubicació i planifica la teva ruta.",
+        button: "Veure a Google Maps",
+      },
+
+      news: {
+        subtitle: "NOTÍCIES",
+        title1: "Actualitat",
+        title2: "de Gincat System.",
+        description:
+          "Descobreix les últimes novetats, projectes i notícies de Gincat System.",
+      },
+
       footer: {
         description:
           "Especialistes en disseny i fabricació de matrius, estampació metàl·lica i solucions industrials d'alta precisió.",
@@ -1418,21 +1593,7 @@ es: {
   
         designed: "Dissenyat i desenvolupat per Gincat System.",
       },
-      map: {
-        subtitle: "VISITA'NS",
-        title: "Som a prop teu.",
-        description:
-          "El nostre centre productiu està situat a Sant Fruitós de Bages, des d'on dissenyem, fabriquem i desenvolupem solucions de matriceria i estampació metàl·lica per a clients d'arreu d'Espanya.",
-        address: "Adreça",
-        schedule: "Horari",
-        weekdays: "De dilluns a divendres",
-        directions: "Com arribar",
-        directionsText:
-          "Consulta la ruta directament a Google Maps i planifica la teva visita a les nostres instal·lacions.",
-        button: "Obrir Google Maps →",
-      },
     },
-
     zh: {
       hero: {
         subtitle: "GINCAT SYSTEM",
@@ -1466,14 +1627,6 @@ es: {
         quote: "申请报价",
       },
   
-      news: {
-        subtitle: "新闻",
-        title1: "GINCAT SYSTEM",
-        title2: "最新动态",
-        description:
-          "了解我们的最新项目、新设备、认证以及公司的最新消息。",
-      },
-
       company: {
         subtitle: "关于 GINCAT SYSTEM",
   
@@ -1525,33 +1678,68 @@ es: {
         item4Description:
           "整个生产过程均实施严格质量检测。",
       },
+
   
       services: {
-        subtitle: "服务",
   
-        title1: "定制化",
-        title2: "解决方案。",
+        subtitle: "服务",
+
+  
+        title1: "一站式完成",
+  
+        title2: "整个流程",
+
   
         description:
-          "从产品设计到批量生产，全程陪伴客户完成项目。",
+  
+          "我们负责完整的生产流程，从模具设计和制造，到金属冲压、外部工序以及最终包装。",
+
   
         imageAlt: "工业制造",
+
   
         service1Title: "模具设计",
-        service1Description:
-          "开发适用于各种应用的连续冲压模具。",
   
-        service2Title: "生产制造",
+        service1Description:
+  
+          "根据每个项目的需求进行连续模具的设计与开发。",
+
+  
+        service2Title: "模具制造",
+  
         service2Description:
-          "自主完成高精度金属冲压生产。",
+  
+          "自主制造高精度模具。",
+
   
         service3Title: "维护保养",
-        service3Description:
-          "提供模具维修、优化及预防性维护服务。",
   
-        service4Title: "技术咨询",
+        service3Description:
+  
+          "提供模具和工装的维修、调试及预防性维护。",
+
+  
+        service4Title: "金属冲压",
+  
         service4Description:
-          "为工业项目提供专业技术支持。",
+  
+          "通过高精度金属冲压确保产品质量和生产稳定性。",
+
+  
+        service5Title: "外部工序",
+  
+        service5Description:
+  
+          "管理和协调完成产品所需的外部工序。",
+
+  
+        service6Title: "包装",
+  
+        service6Description:
+  
+          "完成产品交付前的最终准备和包装。",
+
+  
       },
   
       whyGincat: {
@@ -1684,6 +1872,26 @@ es: {
         button: "发送",
       },
   
+      map: {
+        subtitle: "公司位置",
+        title: "我们在哪里",
+        description: "欢迎参观我们的生产设施。",
+        address: "地址",
+        schedule: "工作时间",
+        weekdays: "周一至周五",
+        directions: "如何到达",
+        directionsText: "查看我们的地址并规划您的路线。",
+        button: "在 Google 地图中查看",
+      },
+
+      news: {
+        subtitle: "新闻",
+        title1: "最新动态",
+        title2: "Gincat System",
+        description:
+          "了解 Gincat System 的最新动态、项目和新闻。",
+      },
+
       footer: {
         description:
           "专注于模具设计、金属冲压及高精度工业解决方案。",
@@ -1704,21 +1912,7 @@ es: {
   
         designed: "由 Gincat System 设计与开发。",
       },
-      map: {
-        subtitle: "欢迎访问",
-        title: "我们就在您身边。",
-        description:
-          "我们的生产中心位于 Sant Fruitós de Bages，在这里我们设计、制造并开发模具和金属冲压解决方案，为西班牙各地客户提供服务。",
-        address: "地址",
-        schedule: "营业时间",
-        weekdays: "周一至周五",
-        directions: "如何到达",
-        directionsText:
-          "通过 Google 地图查看路线并规划您的来访。",
-        button: "打开 Google 地图 →",
-      },
     },
-
     ja: {
       hero: {
         subtitle: "GINCAT SYSTEM",
@@ -1752,14 +1946,6 @@ es: {
         quote: "見積もり依頼",
       },
   
-      news: {
-        subtitle: "ニュース",
-        title1: "GINCAT SYSTEM",
-        title2: "最新情報",
-        description:
-          "最新プロジェクト、新設備、認証取得、会社からのお知らせをご覧ください。",
-      },
-
       company: {
         subtitle: "GINCAT SYSTEMについて",
   
@@ -1811,33 +1997,68 @@ es: {
         item4Description:
           "製造工程全体を通じて品質検査を実施します。",
       },
+
   
       services: {
-        subtitle: "サービス",
   
-        title1: "お客様に合わせた",
-        title2: "ソリューション。",
+        subtitle: "サービス",
+
+  
+        title1: "すべての工程を",
+  
+        title2: "一か所で",
+
   
         description:
-          "設計から量産まで、お客様のプロジェクトを一貫してサポートします。",
+  
+          "金型の設計・製造からプレス加工、外部工程、最終梱包まで、すべての工程を一貫して管理します。",
+
   
         imageAlt: "産業製造",
+
   
         service1Title: "金型設計",
-        service1Description:
-          "用途に応じた順送金型を設計・開発します。",
   
-        service2Title: "製造",
+        service1Description:
+  
+          "各プロジェクトの要件に合わせた順送金型の設計・開発を行います。",
+
+  
+        service2Title: "金型製造",
+  
         service2Description:
-          "高精度な金属プレス加工を自社で行います。",
+  
+          "高精度金型を自社で製造します。",
+
   
         service3Title: "メンテナンス",
-        service3Description:
-          "金型の修理・最適化・予防保全を行います。",
   
-        service4Title: "技術サポート",
+        service3Description:
+  
+          "金型・治具の修理、調整、予防保全を行います。",
+
+  
+        service4Title: "プレス加工",
+  
         service4Description:
-          "あらゆる産業プロジェクトに技術支援を提供します。",
+  
+          "高精度な金属プレス加工により品質と安定した生産を実現します。",
+
+  
+        service5Title: "外部工程",
+  
+        service5Description:
+  
+          "製品完成に必要な外部工程の管理・調整を行います。",
+
+  
+        service6Title: "梱包",
+  
+        service6Description:
+  
+          "納品に向けた製品の最終準備と梱包を行います。",
+
+  
       },
   
       whyGincat: {
@@ -1970,6 +2191,26 @@ es: {
         button: "送信",
       },
   
+      map: {
+        subtitle: "所在地",
+        title: "私たちの所在地",
+        description: "当社の施設へお越しください。",
+        address: "住所",
+        schedule: "営業時間",
+        weekdays: "月曜日から金曜日",
+        directions: "アクセス",
+        directionsText: "所在地を確認してルートをご確認ください。",
+        button: "Googleマップで見る",
+      },
+
+      news: {
+        subtitle: "ニュース",
+        title1: "最新情報",
+        title2: "Gincat System.",
+        description:
+          "Gincat Systemの最新ニュース、プロジェクト、情報をご覧ください。",
+      },
+      
       footer: {
         description:
           "金型設計・金属プレス加工・高精度産業ソリューションのスペシャリスト。",
@@ -1990,20 +2231,5 @@ es: {
   
         designed: "Designed & Developed by Gincat System.",
       },
-
-      map: {
-        subtitle: "アクセス",
-        title: "私たちはすぐ近くにいます。",
-        description:
-          "当社の生産拠点は Sant Fruitós de Bages にあり、ここで金型設計・製造および金属プレス加工ソリューションを開発し、スペイン全土のお客様に提供しています。",
-        address: "住所",
-        schedule: "営業時間",
-        weekdays: "月曜日〜金曜日",
-        directions: "アクセス方法",
-        directionsText:
-          "Google マップでルートを確認し、ご来社の計画を立ててください。",
-        button: "Google マップを開く →",
-      },
     },
   };
-  

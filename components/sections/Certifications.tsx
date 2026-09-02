@@ -16,18 +16,21 @@ export default function Certifications({
       title: "ISO 9001",
       status: t.active,
       statusColor: "bg-emerald-100 text-emerald-700",
+      pdf: "/certificados/iso9001.pdf",
     },
     {
       image: "/images/certifications/iso14001.png",
       title: "ISO 14001",
       status: t.active,
       statusColor: "bg-emerald-100 text-emerald-700",
+      pdf: "/certificados/iso14001.pdf",
     },
     {
       image: "/images/certifications/iatf16949.png",
       title: "IATF 16949",
       status: t.comingSoon,
       statusColor: "bg-amber-100 text-amber-700",
+      pdf: null,
     },
   ];
 
@@ -58,35 +61,66 @@ export default function Certifications({
 
         <div className="grid gap-10 md:grid-cols-3">
 
-          {certifications.map((certification) => (
-            <div
-              key={certification.title}
-              className="flex flex-col items-center rounded-3xl border border-slate-200 bg-white p-12 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
-            >
+          {certifications.map((certification) => {
 
-              <div className="relative h-28 w-full">
+            const content = (
+              <div
+                className={`flex h-full flex-col items-center rounded-3xl border border-slate-200 bg-white p-12 shadow-sm transition-all duration-300 ${
+                  certification.pdf
+                    ? "cursor-pointer hover:-translate-y-2 hover:shadow-xl"
+                    : ""
+                }`}
+              >
 
-                <Image
-                  src={certification.image}
-                  alt={certification.title}
-                  fill
-                  className="object-contain"
-                />
+                <div className="relative h-28 w-full">
+
+                  <Image
+                    src={certification.image}
+                    alt={certification.title}
+                    fill
+                    className="object-contain"
+                  />
+
+                </div>
+
+                <h3 className="mt-10 text-2xl font-bold text-slate-900">
+                  {certification.title}
+                </h3>
+
+                <span
+                  className={`mt-5 rounded-full px-4 py-2 text-sm font-semibold ${certification.statusColor}`}
+                >
+                  {certification.status}
+                </span>
+
+                {certification.pdf && (
+                  <p className="mt-4 text-sm text-slate-400">
+                    Haz clic para descargar
+                  </p>
+                )}
 
               </div>
+            );
 
-              <h3 className="mt-10 text-2xl font-bold text-slate-900">
-                {certification.title}
-              </h3>
+            if (certification.pdf) {
+              return (
+                <a
+                  key={certification.title}
+                  href={certification.pdf}
+                  download
+                  className="block h-full"
+                >
+                  {content}
+                </a>
+              );
+            }
 
-              <span
-                className={`mt-5 rounded-full px-4 py-2 text-sm font-semibold ${certification.statusColor}`}
-              >
-                {certification.status}
-              </span>
-
-            </div>
-          ))}
+            return (
+              <div key={certification.title} className="h-full">
+                {content}
+              </div>
+            );
+          })}
 
         </div>
 

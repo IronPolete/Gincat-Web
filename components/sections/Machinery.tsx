@@ -12,18 +12,17 @@ export default function Machinery({ locale }: MachineryProps) {
     {
       image: "/images/machinery/machine1.png",
       title: t.machine1,
+      contain: false,
     },
     {
-      image: "/images/machinery/machine2.png",
-      title: t.machine2,
-    },
-    {
-      image: "/images/machinery/machine3.png",
+      image: "/images/machinery/PHOTOA.jfif",
       title: t.machine3,
+      contain: true,
     },
     {
-      image: "/images/machinery/machine4.png",
+      image: "/images/news/keyence.jpg",
       title: t.machine4,
+      contain: true,
     },
   ];
 
@@ -47,19 +46,26 @@ export default function Machinery({ locale }: MachineryProps) {
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-3">
+
           {machines.map((machine) => (
             <div
               key={machine.title}
               className="group overflow-hidden rounded-3xl bg-white shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
             >
-              <div className="relative h-[380px]">
+              <div className="relative h-[300px] bg-white">
+
                 <Image
                   src={machine.image}
                   alt={machine.title}
                   fill
-                  className="object-cover transition duration-700 group-hover:scale-105"
+                  className={
+                    machine.contain
+                      ? "object-contain p-4 transition duration-700 group-hover:scale-105"
+                      : "object-cover transition duration-700 group-hover:scale-105"
+                  }
                 />
+
               </div>
 
               <div className="p-8">
@@ -69,6 +75,7 @@ export default function Machinery({ locale }: MachineryProps) {
               </div>
             </div>
           ))}
+
         </div>
 
       </div>
