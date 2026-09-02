@@ -77,6 +77,6 @@ export const news = [
       ja: "Gincat Systemは、新しい三菱 MV2400S ワイヤ放電加工機を導入し、製造工程の精度、品質、効率を向上させます。",
     },
 
-    image: "/images/machinery/PHOTOA.jfif",
+    image: "/images/machinery/PHOTOA.jpg",
   },
 ];
