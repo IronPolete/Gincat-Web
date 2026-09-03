@@ -37,13 +37,22 @@ export default function Footer({ locale }: FooterProps) {
 
             {/* Política de Calidad */}
             <a
-              href="/documentos/politica-calidad.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-5 inline-block text-sm text-sky-400 transition hover:text-white"
-            >
-              Política de Calidad
-            </a>
+  href="/documentos/politica-calidad.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-5 inline-block text-sm text-sky-400 transition hover:text-white"
+>
+  Política de Calidad
+</a>
+
+<a
+  href="/documentos/codigo-conducta.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-2 block text-sm text-sky-400 transition hover:text-white"
+>
+  Código de Conducta
+</a>
           </div>
 
           {/* Empresa */}
