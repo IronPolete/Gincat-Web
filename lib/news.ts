@@ -1,5 +1,32 @@
 export const news = [
   {
+    id: 4,
+    date: "15/09/2026",
+
+    title: {
+      es: "Colaboración con ASFE",
+      en: "Collaboration with ASFE",
+      fr: "Collaboration avec ASFE",
+      de: "Zusammenarbeit mit ASFE",
+      ca: "Col·laboració amb ASFE",
+      zh: "与 ASFE 合作",
+      ja: "ASFEとの協力",
+    },
+
+    description: {
+      es: "Gincat System colabora con la Associació Sant Fruitós d'Esports (ASFE), apoyando el deporte y el compromiso con nuestra comunidad local.",
+      en: "Gincat System collaborates with Associació Sant Fruitós d'Esports (ASFE), supporting sport and our commitment to the local community.",
+      fr: "Gincat System collabore avec l'Associació Sant Fruitós d'Esports (ASFE), en soutenant le sport et notre engagement envers la communauté locale.",
+      de: "Gincat System arbeitet mit der Associació Sant Fruitós d'Esports (ASFE) zusammen und unterstützt den Sport sowie unser Engagement für die lokale Gemeinschaft.",
+      ca: "Gincat System col·labora amb l'Associació Sant Fruitós d'Esports (ASFE), donant suport a l'esport i al nostre compromís amb la comunitat local.",
+      zh: "Gincat System 与 Sant Fruitós d'Esports 协会（ASFE）开展合作，支持体育事业并践行对当地社区的承诺。",
+      ja: "Gincat Systemは、Associació Sant Fruitós d'Esports（ASFE）と協力し、スポーツと地域社会への取り組みを支援しています。",
+    },
+
+    image: "/images/news/asfe.jpg",
+  },
+
+  {
     id: 1,
     date: "29/07/2026",
 
