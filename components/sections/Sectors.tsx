@@ -17,60 +17,6 @@ export default function Sectors({
 }: SectorsProps) {
   const t = translations[locale].sectors;
 
-  const extraSectors = {
-    es: {
-      title: ["Eléctrico", "Electrodoméstico"],
-      text: [
-        "Componentes metálicos de precisión para sistemas eléctricos y aplicaciones industriales.",
-        "Piezas metálicas y componentes de precisión para fabricantes de electrodomésticos.",
-      ],
-    },
-    en: {
-      title: ["Electrical", "Home Appliances"],
-      text: [
-        "Precision metal components for electrical systems and industrial applications.",
-        "Metal parts and precision components for home appliance manufacturers.",
-      ],
-    },
-    fr: {
-      title: ["Électrique", "Électroménager"],
-      text: [
-        "Composants métalliques de précision pour les systèmes électriques et les applications industrielles.",
-        "Pièces métalliques et composants de précision pour les fabricants d'appareils électroménagers.",
-      ],
-    },
-    de: {
-      title: ["Elektrotechnik", "Haushaltsgeräte"],
-      text: [
-        "Präzisions-Metallkomponenten für elektrische Systeme und industrielle Anwendungen.",
-        "Metallteile und Präzisionskomponenten für Hersteller von Haushaltsgeräten.",
-      ],
-    },
-    ca: {
-      title: ["Elèctric", "Electrodomèstic"],
-      text: [
-        "Components metàl·lics de precisió per a sistemes elèctrics i aplicacions industrials.",
-        "Peces metàl·liques i components de precisió per a fabricants d'electrodomèstics.",
-      ],
-    },
-    zh: {
-      title: ["电气", "家用电器"],
-      text: [
-        "用于电气系统和工业应用的高精度金属部件。",
-        "为家用电器制造商提供金属零件和高精度组件。",
-      ],
-    },
-    ja: {
-      title: ["電気", "家電"],
-      text: [
-        "電気システムや産業用途向けの高精度金属部品。",
-        "家電メーカー向けの金属部品および高精度コンポーネント。",
-      ],
-    },
-  } as const;
-
-  const extra = extraSectors[locale];
-
   const sectors = [
     {
       icon: Car,
@@ -94,20 +40,24 @@ export default function Sectors({
     },
     {
       icon: Zap,
-      title: extra.title[0],
-      text: extra.text[0],
+      title: t.item5Title,
+      text: t.item5Text,
     },
     {
       icon: Refrigerator,
-      title: extra.title[1],
-      text: extra.text[1],
+      title: t.item6Title,
+      text: t.item6Text,
     },
   ];
 
   return (
-    <section id="sectors" className="bg-white py-32">
+    <section
+      id="sectors"
+      className="bg-white py-32"
+    >
       <div className="mx-auto max-w-7xl px-8">
 
+        {/* CABECERA */}
         <div className="mb-20 text-center">
 
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">
@@ -126,6 +76,7 @@ export default function Sectors({
 
         </div>
 
+        {/* SECTORES */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
           {sectors.map((sector) => {

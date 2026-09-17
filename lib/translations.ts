@@ -225,30 +225,37 @@ export const translations = {
 
     sectors: {
       subtitle: "SECTORES",
-
+    
       title1: "Soluciones para",
       title2: "múltiples industrias.",
-
+    
       description:
-        "Trabajamos con empresas de diferentes sectores industriales ofreciendo soluciones adaptadas a cada necesidad.",
-
+        "Desarrollamos soluciones de precisión para empresas de distintos sectores industriales, adaptándonos a las exigencias técnicas y productivas de cada proyecto.",
+    
       item1Title: "Automoción",
       item1Text:
-        "Fabricación de componentes metálicos de alta precisión para la industria del automóvil.",
-
+        "Soluciones metálicas de alto rendimiento para responder a las exigencias de la industria del automóvil.",
+    
       item2Title: "Industria",
       item2Text:
-        "Soluciones para maquinaria industrial, bienes de equipo y fabricación general.",
-
+        "Fabricación de soluciones a medida para maquinaria, bienes de equipo y todo tipo de aplicaciones industriales.",
+    
       item3Title: "Maquinaria",
       item3Text:
-        "Matrices, utillajes y componentes técnicos para fabricantes de maquinaria.",
-
+        "Matrices, utillajes y elementos técnicos desarrollados para optimizar procesos y equipos de fabricación.",
+    
       item4Title: "Electrónica",
       item4Text:
-        "Piezas metálicas de precisión para aplicaciones electrónicas e industriales.",
+        "Tecnología y fabricación metálica para aplicaciones electrónicas donde cada detalle cuenta.",
+    
+      item5Title: "Eléctrico",
+      item5Text:
+        "Soluciones metálicas diseñadas para integrarse en sistemas eléctricos y equipos de altas exigencias técnicas.",
+    
+      item6Title: "Electrodoméstico",
+      item6Text:
+        "Fabricación de piezas y conjuntos metálicos que combinan funcionalidad, diseño y fiabilidad.",
     },
-
     contact: {
       subtitle: "CONTACTO",
 
@@ -543,28 +550,36 @@ export const translations = {
   
       sectors: {
         subtitle: "INDUSTRIES",
-  
+      
         title1: "Solutions for",
         title2: "multiple industries.",
-  
+      
         description:
-          "We manufacture precision components and tooling for customers operating in demanding industrial sectors.",
-  
+          "We develop precision solutions for companies across different industrial sectors, adapting to the technical and production requirements of each project.",
+      
         item1Title: "Automotive",
         item1Text:
-          "High-precision metal components for automotive manufacturers and suppliers.",
-  
+          "High-performance metal solutions designed to meet the demanding requirements of the automotive industry.",
+      
         item2Title: "Industrial",
         item2Text:
-          "Industrial solutions for machinery, equipment and general manufacturing.",
-  
+          "Tailored solutions for machinery, capital equipment and a wide range of industrial applications.",
+      
         item3Title: "Machinery",
         item3Text:
-          "Tooling, dies and technical components for machinery manufacturers.",
-  
+          "Dies, tooling and technical components developed to optimize manufacturing processes and equipment.",
+      
         item4Title: "Electronics",
         item4Text:
-          "Precision metal parts for electronic and industrial applications.",
+          "Technology and metal manufacturing for electronic applications where every detail matters.",
+      
+        item5Title: "Electrical",
+        item5Text:
+          "Metal solutions designed to integrate into electrical systems and equipment with demanding technical requirements.",
+      
+        item6Title: "Home Appliances",
+        item6Text:
+          "Manufacture of metal parts and assemblies combining functionality, design and reliability.",
       },
   
       contact: {
@@ -866,28 +881,36 @@ export const translations = {
   
       sectors: {
         subtitle: "SECTEURS",
-  
+      
         title1: "Des solutions pour",
         title2: "de nombreux secteurs.",
-  
+      
         description:
-          "Nous fabriquons des composants et des outillages de précision destinés à différents secteurs industriels.",
-  
+          "Nous développons des solutions de précision pour différents secteurs industriels, en nous adaptant aux exigences techniques et de production de chaque projet.",
+      
         item1Title: "Automobile",
         item1Text:
-          "Composants métalliques de haute précision destinés aux constructeurs et équipementiers automobiles.",
-  
+          "Des solutions métalliques haute performance pour répondre aux exigences de l'industrie automobile.",
+      
         item2Title: "Industrie",
         item2Text:
-          "Solutions pour les équipements industriels, les machines et la fabrication générale.",
-  
+          "Fabrication de solutions sur mesure pour les machines, les biens d'équipement et de nombreuses applications industrielles.",
+      
         item3Title: "Machines",
         item3Text:
-          "Matrices, outillages et composants techniques pour les fabricants de machines.",
-  
+          "Matrices, outillages et composants techniques conçus pour optimiser les processus et les équipements de fabrication.",
+      
         item4Title: "Électronique",
         item4Text:
-          "Pièces métalliques de précision pour les applications électroniques et industrielles.",
+          "Technologie et fabrication métallique pour les applications électroniques où chaque détail compte.",
+      
+        item5Title: "Électrique",
+        item5Text:
+          "Des solutions métalliques conçues pour s'intégrer dans des systèmes électriques et des équipements aux exigences techniques élevées.",
+      
+        item6Title: "Électroménager",
+        item6Text:
+          "Fabrication de pièces et d'ensembles métalliques combinant fonctionnalité, design et fiabilité.",
       },
   
       contact: {
@@ -1184,28 +1207,36 @@ export const translations = {
   
       sectors: {
         subtitle: "BRANCHEN",
-  
+      
         title1: "Lösungen für",
         title2: "verschiedene Industrien.",
-  
+      
         description:
-          "Wir fertigen Präzisionskomponenten und Werkzeuge für anspruchsvolle Industriebranchen.",
-  
+          "Wir entwickeln Präzisionslösungen für Unternehmen aus verschiedenen Industriezweigen und passen uns den technischen und produktionstechnischen Anforderungen jedes Projekts an.",
+      
         item1Title: "Automobilindustrie",
         item1Text:
-          "Präzisions-Metallkomponenten für Fahrzeughersteller und Zulieferer.",
-  
+          "Hochleistungsfähige Metalllösungen für die anspruchsvollen Anforderungen der Automobilindustrie.",
+      
         item2Title: "Industrie",
         item2Text:
-          "Industrielle Lösungen für Maschinenbau und allgemeine Fertigung.",
-  
+          "Maßgeschneiderte Lösungen für Maschinen, Investitionsgüter und unterschiedlichste industrielle Anwendungen.",
+      
         item3Title: "Maschinenbau",
         item3Text:
-          "Werkzeuge, Matrizen und technische Komponenten für Maschinenhersteller.",
-  
+          "Matrizen, Werkzeuge und technische Komponenten zur Optimierung von Fertigungsprozessen und Produktionsanlagen.",
+      
         item4Title: "Elektronik",
         item4Text:
-          "Präzisions-Metallteile für elektronische und industrielle Anwendungen.",
+          "Technologie und Metallfertigung für elektronische Anwendungen, bei denen jedes Detail zählt.",
+      
+        item5Title: "Elektrotechnik",
+        item5Text:
+          "Metalllösungen für elektrische Systeme und Anlagen mit hohen technischen Anforderungen.",
+      
+        item6Title: "Haushaltsgeräte",
+        item6Text:
+          "Fertigung von Metallteilen und Baugruppen, die Funktionalität, Design und Zuverlässigkeit verbinden.",
       },
   
       contact: {
@@ -1502,30 +1533,37 @@ export const translations = {
   
       sectors: {
         subtitle: "SECTORS",
-  
+      
         title1: "Solucions per a",
         title2: "múltiples indústries.",
-  
+      
         description:
-          "Fabriquem components i utillatges de precisió per a empreses de diferents sectors industrials.",
-  
+          "Desenvolupem solucions de precisió per a empreses de diferents sectors industrials, adaptant-nos a les exigències tècniques i productives de cada projecte.",
+      
         item1Title: "Automoció",
         item1Text:
-          "Components metàl·lics d'alta precisió per a fabricants i proveïdors del sector de l'automoció.",
-  
+          "Solucions metàl·liques d'alt rendiment per respondre a les exigències de la indústria de l'automòbil.",
+      
         item2Title: "Indústria",
         item2Text:
-          "Solucions industrials per a maquinària, equips i fabricació general.",
-  
+          "Fabricació de solucions a mida per a maquinària, béns d'equip i tot tipus d'aplicacions industrials.",
+      
         item3Title: "Maquinària",
         item3Text:
-          "Matrius, utillatges i components tècnics per a fabricants de maquinària.",
-  
+          "Matrius, utillatges i elements tècnics desenvolupats per optimitzar processos i equips de fabricació.",
+      
         item4Title: "Electrònica",
         item4Text:
-          "Peces metàl·liques de precisió per a aplicacions electròniques i industrials.",
+          "Tecnologia i fabricació metàl·lica per a aplicacions electròniques on cada detall compta.",
+      
+        item5Title: "Elèctric",
+        item5Text:
+          "Solucions metàl·liques dissenyades per integrar-se en sistemes elèctrics i equips d'altes exigències tècniques.",
+      
+        item6Title: "Electrodomèstic",
+        item6Text:
+          "Fabricació de peces i conjunts metàl·lics que combinen funcionalitat, disseny i fiabilitat.",
       },
-  
       contact: {
         subtitle: "CONTACTE",
   
@@ -1821,30 +1859,37 @@ export const translations = {
   
       sectors: {
         subtitle: "行业",
-  
+      
         title1: "服务于",
         title2: "多个行业。",
-  
+      
         description:
-          "我们为多个工业领域生产精密零部件及模具。",
-  
+          "我们为不同工业领域的企业开发精密解决方案，并根据每个项目的技术和生产要求提供针对性的制造能力。",
+      
         item1Title: "汽车行业",
         item1Text:
-          "为汽车制造商及供应商提供高精度金属零部件。",
-  
+          "高性能金属解决方案，满足汽车行业严苛的质量与生产要求。",
+      
         item2Title: "工业制造",
         item2Text:
-          "提供机械设备及工业制造解决方案。",
-  
+          "为机械设备、工业装备及各类工业应用提供定制化解决方案。",
+      
         item3Title: "机械设备",
         item3Text:
-          "为机械制造商提供模具及技术零件。",
-  
+          "提供模具、工装及技术部件，帮助优化制造流程和生产设备。",
+      
         item4Title: "电子行业",
         item4Text:
-          "提供电子及工业应用所需的精密金属零件。",
+          "面向电子应用提供先进的金属制造解决方案，注重每一个细节。",
+      
+        item5Title: "电气行业",
+        item5Text:
+          "为电气系统和高技术要求设备提供可靠的金属解决方案。",
+      
+        item6Title: "家用电器",
+        item6Text:
+          "制造兼具功能性、设计感和可靠性的金属零件及组件。",
       },
-  
       contact: {
         subtitle: "联系我们",
   
@@ -2140,28 +2185,36 @@ export const translations = {
   
       sectors: {
         subtitle: "対応分野",
-  
+      
         title1: "さまざまな",
         title2: "産業向け。",
-  
+      
         description:
-          "幅広い産業向けに精密部品・金型を製造しています。",
-  
+          "さまざまな産業分野のお客様に対し、各プロジェクトの技術要件や生産ニーズに合わせた精密ソリューションを提供しています。",
+      
         item1Title: "自動車",
         item1Text:
-          "自動車メーカー・サプライヤー向け高精度金属部品。",
-  
-        item2Title: "産業機械",
+          "自動車業界の厳しい要求に応える、高性能な金属ソリューションを提供しています。",
+      
+        item2Title: "産業",
         item2Text:
-          "産業設備・機械向けソリューション。",
-  
+          "機械、産業設備および幅広い産業用途に対応したカスタムソリューションを製造しています。",
+      
         item3Title: "機械製造",
         item3Text:
-          "機械メーカー向け金型・技術部品。",
-  
+          "製造工程や設備の最適化に貢献する金型、治具、技術部品を提供しています。",
+      
         item4Title: "電子機器",
         item4Text:
-          "電子・産業用途向け精密金属部品。",
+          "細部まで高い精度が求められる電子機器向けに、金属加工技術と製造ソリューションを提供しています。",
+      
+        item5Title: "電気",
+        item5Text:
+          "電気システムや高い技術要件が求められる設備に対応する金属ソリューションを提供しています。",
+      
+        item6Title: "家電",
+        item6Text:
+          "機能性、デザイン、信頼性を兼ね備えた金属部品・アセンブリを製造しています。",
       },
   
       contact: {
