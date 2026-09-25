@@ -1,5 +1,32 @@
 export const news = [
   {
+    id: 5,
+    date: "25/09/2026",
+
+    title: {
+      es: "Gincat System, socio de ASCAMM",
+      en: "Gincat System, ASCAMM member",
+      fr: "Gincat System, membre d'ASCAMM",
+      de: "Gincat System ist Mitglied von ASCAMM",
+      ca: "Gincat System, soci d'ASCAMM",
+      zh: "Gincat System 成为 ASCAMM 会员",
+      ja: "Gincat System、ASCAMM会員",
+    },
+
+    description: {
+      es: "Gincat System es socio de ASCAMM desde noviembre de 2024, fomentando la colaboración industrial y el intercambio de conocimiento dentro del sector de las matrices y la estampación metálica.",
+      en: "Gincat System has been an ASCAMM member since November 2024, promoting industrial collaboration and knowledge sharing within the tooling and metal stamping sector.",
+      fr: "Gincat System est membre d'ASCAMM depuis novembre 2024, favorisant la collaboration industrielle et le partage des connaissances dans le secteur des matrices et de l'emboutissage métallique.",
+      de: "Gincat System ist seit November 2024 Mitglied von ASCAMM und fördert damit die industrielle Zusammenarbeit und den Wissensaustausch im Bereich Werkzeugbau und Metallumformung.",
+      ca: "Gincat System és soci d'ASCAMM des de novembre de 2024, fomentant la col·laboració industrial i l'intercanvi de coneixement dins del sector de les matrius i l'estampació metàl·lica.",
+      zh: "Gincat System 自2024年11月起成为 ASCAMM 会员，积极推动模具与金属冲压领域的工业合作与知识交流。",
+      ja: "Gincat Systemは2024年11月よりASCAMMの会員として、金型および金属プレス分野における産業連携と知識交流を推進しています。",
+    },
+
+    image: "/images/news/ascamm.svg",
+  },
+
+  {
     id: 4,
     date: "15/09/2026",
 
@@ -14,7 +41,7 @@ export const news = [
     },
 
     description: {
-      es: "Gincat System colabora con la Associació Sant Fruitós d'Esports (ASFE), apoyando el deporte y el compromiso con nuestra comunidad local.",
+      es: "Gincat System colabora con la Associació Sant Fruitós d'Esports (ASFE), apoyando el deporte y nuestro compromiso con la comunidad local.",
       en: "Gincat System collaborates with Associació Sant Fruitós d'Esports (ASFE), supporting sport and our commitment to the local community.",
       fr: "Gincat System collabore avec l'Associació Sant Fruitós d'Esports (ASFE), en soutenant le sport et notre engagement envers la communauté locale.",
       de: "Gincat System arbeitet mit der Associació Sant Fruitós d'Esports (ASFE) zusammen und unterstützt den Sport sowie unser Engagement für die lokale Gemeinschaft.",

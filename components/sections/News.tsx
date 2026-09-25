@@ -36,7 +36,7 @@ export default function News({ locale }: NewsProps) {
         </div>
 
         {/* NOTICIAS */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
           {news.map((item) => (
             <article
