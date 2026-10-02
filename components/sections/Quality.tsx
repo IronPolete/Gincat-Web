@@ -1,4 +1,8 @@
-import { BadgeCheck, CheckCircle2, ClipboardCheck } from "lucide-react";
+import {
+  BadgeCheck,
+  CheckCircle2,
+  ClipboardCheck,
+} from "lucide-react";
 import { translations } from "@/lib/translations";
 
 type QualityProps = {
@@ -29,7 +33,9 @@ export default function Quality({ locale }: QualityProps) {
   return (
     <section id="calidad" className="bg-white py-32">
       <div className="mx-auto max-w-7xl px-8">
-        <div className="mb-20 text-center">
+
+        {/* CABECERA */}
+        <div className="mb-16 text-center">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">
             {t.subtitle}
           </p>
@@ -45,6 +51,44 @@ export default function Quality({ locale }: QualityProps) {
           </p>
         </div>
 
+        {/* VÍDEOS */}
+        <div className="mb-20 grid gap-8 lg:grid-cols-2">
+          <div className="overflow-hidden rounded-3xl bg-slate-100 shadow-2xl">
+            <video
+              className="block aspect-video h-full w-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+            >
+              <source
+                src="/videos/calidad-1.mp4"
+                type="video/mp4"
+              />
+              Tu navegador no admite la reproducción de vídeo.
+            </video>
+          </div>
+
+          <div className="overflow-hidden rounded-3xl bg-slate-100 shadow-2xl">
+            <video
+              className="block aspect-video h-full w-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+            >
+              <source
+                src="/videos/calidad-2.mp4"
+                type="video/mp4"
+              />
+              Tu navegador no admite la reproducción de vídeo.
+            </video>
+          </div>
+        </div>
+
+        {/* TARJETAS */}
         <div className="grid gap-8 lg:grid-cols-3">
           {items.map((item) => {
             const Icon = item.icon;
@@ -69,6 +113,7 @@ export default function Quality({ locale }: QualityProps) {
             );
           })}
         </div>
+
       </div>
     </section>
   );
