@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { translations } from "@/lib/translations";
 
@@ -41,15 +42,26 @@ export default function Services({ locale }: ServicesProps) {
     },
   ];
 
+  const images = [
+    {
+      src: "/images/company/company2-nueva.jpeg",
+      alt: "Matrices de precisión Gincat System",
+    },
+    {
+      src: "/images/company/company1-nueva.png",
+      alt: t.imageAlt,
+    },
+    {
+      src: "/images/company/company4-nueva.jpeg",
+      alt: "Fabricación de matrices Gincat System",
+    },
+  ];
+
   return (
-    <section
-      id="servicios"
-      className="bg-white py-32"
-    >
+    <section id="servicios" className="bg-white py-32">
       <div className="mx-auto max-w-7xl px-8">
-
+        {/* CABECERA */}
         <div className="mb-20 max-w-4xl">
-
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-slate-500">
             {t.subtitle}
           </p>
@@ -63,32 +75,38 @@ export default function Services({ locale }: ServicesProps) {
           <p className="mt-8 text-xl leading-9 text-slate-600">
             {t.description}
           </p>
-
         </div>
 
-        <div className="grid items-center gap-20 lg:grid-cols-2">
-
-          <div className="overflow-hidden rounded-3xl shadow-2xl">
-
-            <Image
-              src="/images/company/company1.png"
-              alt={t.imageAlt}
-              width={900}
-              height={900}
-              className="h-full w-full object-cover transition duration-700 hover:scale-105"
-            />
-
+        {/* FOTOGRAFÍAS Y SERVICIOS */}
+        <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-20">
+          {/* COLUMNA IZQUIERDA: 3 FOTOGRAFÍAS */}
+          <div className="flex flex-col gap-8">
+            {images.map((image, index) => (
+              <div
+                key={image.src}
+                className="overflow-hidden rounded-3xl bg-white shadow-xl"
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={1200}
+                  height={800}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="h-auto w-full transition-transform duration-700 hover:scale-105"
+                  priority={index === 0}
+                />
+              </div>
+            ))}
           </div>
 
+          {/* COLUMNA DERECHA: SERVICIOS */}
           <div>
-
             {services.map((service) => (
               <div
                 key={service.number}
                 className="border-b border-slate-200 py-8"
               >
                 <div className="mb-4 flex items-center gap-6">
-
                   <span className="text-lg font-bold text-slate-400">
                     {service.number}
                   </span>
@@ -98,20 +116,15 @@ export default function Services({ locale }: ServicesProps) {
                   <h3 className="text-3xl font-bold text-slate-900">
                     {service.title}
                   </h3>
-
                 </div>
 
                 <p className="pl-[58px] leading-8 text-slate-600">
                   {service.description}
                 </p>
-
               </div>
             ))}
-
           </div>
-
         </div>
-
       </div>
     </section>
   );
