@@ -10,7 +10,7 @@ export default function Machinery({ locale }: MachineryProps) {
 
   const machines = [
     {
-      image: "/images/machinery/machine1.png",
+      image: "/images/machinery/Doble_montante.jpg",
       title: t.machine1,
       contain: false,
     },
