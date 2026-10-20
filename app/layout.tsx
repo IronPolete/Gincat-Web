@@ -1,5 +1,7 @@
+
 import "./globals.css";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import CookieConsent from "@/components/CookieConsent";
 
 export const metadata: Metadata = {
@@ -18,6 +20,8 @@ export default function RootLayout({
         {children}
 
         <CookieConsent />
+
+        <Analytics />
       </body>
     </html>
   );
